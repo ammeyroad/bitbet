@@ -1572,7 +1572,7 @@ select {
 
     0%,
     to {
-        transform: translateY(5%)
+        transform: translateY(10%)
     }
 
     50% {
@@ -1584,7 +1584,7 @@ select {
 
     0%,
     to {
-        transform: translateY(5%)
+        transform: translateY(10%)
     }
 
     50% {
@@ -1595,6 +1595,111 @@ select {
 .animate-fly {
     -webkit-animation: fly 6s cubic-bezier(.75, .02, .31, .87) infinite;
     animation: fly 6s cubic-bezier(.75, .02, .31, .87) infinite
+}
+
+
+
+@keyframes getar {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(2px, -2px);
+	}
+
+	40% {
+		transform: translate(2px, 2px);
+	}
+
+	60% {
+		transform: translate(-2px, 2px);
+	}
+
+	80% {
+		transform: translate(-2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+
+.animate-getar {
+    -webkit-animation: getar 6s cubic-bezier(.75, .02, .31, .87) infinite;
+    animation: getar 6s ease-in-out 0s infinite reverse;
+}
+
+@keyframes geser {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-20px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateY(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+
+
+.animate-geser {
+    -webkit-animation: geser 10s cubic-bezier(.75, .02, .31, .87) infinite;
+    animation: geser 20s ease-in-out 0s infinite reverse;
+}
+
+@keyframes majumundur {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+.animate-majumundur {
+    -webkit-animation: majumundur 10s cubic-bezier(.75, .02, .31, .87) infinite;
+    animation: majumundur 6s linear 0s infinite reverse;
+}
+
+@keyframes geserjauh {
+
+    0%,
+    to {
+        transform: translateX(140%)
+    }
+
+    50% {
+        transform: translateX(0)
+    }
+}
+
+
+.animate-geserjauh {
+    animation: geserjauh 10s linear 0s infinite reverse;
 }
 
 @-webkit-keyframes heartBeat {
@@ -1656,8 +1761,13 @@ select {
 }
 
 .animate-spin-slow {
+    -webkit-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite
+}
+
+.animate-slide-left {
     -webkit-animation: spin 10s linear infinite;
-    animation: spin 10s linear infinite
+    animation: slide-left 6.5s linear  infinite alternate-reverse both
 }
 
 .cursor-pointer {

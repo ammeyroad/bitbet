@@ -1,513 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Xhibiter | NFT Marketplace HTML Template</title>
 
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
+<head>
+  <title>Xhibiter | NFT Marketplace HTML Template</title>
 
-    <!-- Css -->
-    <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="utf-8" />
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="" />
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
-  </head>
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/style.css" />
 
-  <body
-    class="dark:bg-jacarta-900 font-body text-jacarta-500 overflow-x-hidden"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-  >
-    <!-- Header -->
-    <header class="js-page-header page-header--transparent fixed top-0 z-20 w-full backdrop-blur transition-colors">
-      <div class="flex items-center px-6 py-6 xl:px-24">
-        <!-- Logo -->
-        <a href="index.html" class="shrink-0">
-          <img src="img/logo_white.png" class="max-h-7" alt="Xhibiter | NFT Marketplace" />
-        </a>
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+</head>
 
-        <!-- Menu / Mobile CTA -->
+<body class="dark:bg-jacarta-900 font-body text-jacarta-500 overflow-x-hidden" itemscope
+  itemtype="http://schema.org/WebPage">
+  <!-- Header -->
+  <header class="js-page-header fixed top-0 z-20 w-full backdrop-blur transition-colors">
+    <div class="flex items-center px-6 py-2 xl:px-24">
+      <!-- Logo -->
+
+      <p href="/index.html"
+        class="text-2xl font-bold text-white hover:text-yellow-500 amf  duration-300 animate-gradient">bitbet.io</p>
+
+
+      <!-- Menu / Actions -->
+      <div
+        class="js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent">
+        <!-- Mobile Logo / Menu Close -->
         <div
-          class="js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-10 w-full items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent"
-        >
-          <!-- Mobile Logo / Menu Close -->
-          <div
-            class="t-0 dark:bg-jacarta-800 fixed left-0 z-10 flex w-full items-center justify-between bg-white p-6 lg:hidden"
-          >
-            <!-- Mobile Logo -->
-            <a href="index.html" class="shrink-0">
-              <img src="img/logo.png" class="max-h-7 dark:hidden" alt="Xhibiter | NFT Marketplace" />
-              <img src="img/logo_white.png" class="hidden max-h-7 dark:block" alt="Xhibiter | NFT Marketplace" />
-            </a>
+          class="t-0 dark:bg-jacarta-800 fixed left-0 z-10 flex w-full items-center justify-between bg-white p-6 lg:hidden">
+          <!-- Mobile Logo -->
+          <p class="text-2xl font-bold text-white hover:text-yellow-500 amf  duration-300 animate-gradient">bitbet.io
+          </p>
 
-            <!-- Mobile Menu Close -->
-            <button
-              class="js-mobile-close border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-              aria-label="close mobile menu"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
-              >
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
-                />
-              </svg>
-            </button>
-          </div>
 
-          <!-- Primary Nav -->
-          <nav class="navbar mt-24 w-full lg:mt-0">
-            <ul class="flex flex-col justify-end lg:flex-row">
-              <li class="group relative">
-                <a
-                  href="#intro"
-                  class="text-jacarta-700 hover:text-accent font-display flex items-center justify-between py-3.5 text-base lg:px-5 lg:text-white lg:hover:text-white/90"
-                  >Intro
-                </a>
-              </li>
-              <li class="group relative">
-                <a
-                  href="#features"
-                  class="text-jacarta-700 hover:text-accent font-display flex items-center justify-between py-3.5 text-base lg:px-5 lg:text-white lg:hover:text-white/90"
-                  >Features
-                </a>
-              </li>
-              <li class="group relative">
-                <a
-                  href="#pages"
-                  class="text-jacarta-700 hover:text-accent font-display flex items-center justify-between py-3.5 text-base lg:px-5 lg:text-white lg:hover:text-white/90"
-                  >Pages
-                </a>
-              </li>
-            </ul>
-          </nav>
 
-          <!-- Mobile CTA -->
-          <div class="mt-4 w-full lg:hidden">
-            <a
-              href="#"
-              class="bg-accent shadow-accent-volume hover:bg-accent-dark inline-block w-full rounded-full py-3 px-8 text-center font-semibold text-white transition-all"
-            >
-              Purchase Now
-            </a>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <!-- <div class="ml-auto hidden shrink-0 lg:flex">
-          <a
-            href="#"
-            class="bg-accent shadow-accent-volume hover:bg-accent-dark inline-block rounded-full py-2 px-8 text-center font-semibold text-white transition-all"
-          >
-            Purchase Now
-          </a>
-        </div> -->
-
-        <!-- Mobile Menu Actions -->
-        <div class="ml-auto flex lg:hidden">
-          <!-- Mobile Menu Toggle -->
+          <!-- Mobile Menu Close -->
           <button
-            class="js-mobile-toggle border-jacarta-100 hover:bg-accent dark:hover:bg-accent focus:bg-accent group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-            aria-label="open mobile menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
-            >
+            class="js-mobile-close border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+            aria-label="close mobile menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white">
               <path fill="none" d="M0 0h24v24H0z" />
-              <path d="M18 18v2H6v-2h12zm3-7v2H3v-2h18zm-3-7v2H6V4h12z" />
+              <path
+                d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
             </svg>
           </button>
         </div>
+
+        <!-- Primary Nav -->
+        <nav class="navbar w-full">
+          <ul class="flex flex-col lg:flex-row">
+            <li class="group lg:hidden">
+              <a href="#"
+                class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:hover:bg-jacarta-800 dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">gra</a>
+            </li>
+            <li class="group lg:hidden">
+              <a href="#"
+                class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">gra</a>
+            </li>
+            <li class="group js-nav-dropdown nav-item dropdown relative">
+              <a href="/allgames.html"
+                class="dropdown-toggle text-jacarta-700 text-2xl amf text-white hover:text-accent  focus:text-accent   flex items-center justify-between py-3.5 lg:px-5"
+                id="navDropdown-3" aria-expanded="false" role="button" data-bs-toggle="dropdown">
+                <img src="/img/icon-allgames.png" alt="" class="w-7  mr-2 shd animate-spin-slow"> GAMES
+
+              </a>
+              <ul
+                class="dropdown-menu dark:bg-jacarta-800 -left-6 top-[85%] z-10 hidden grid-flow-col grid-rows-3 gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:!grid lg:translate-y-4 lg:py-8 lg:px-5 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
+                aria-labelledby="navDropdown-1">
+                <li>
+                  <a href="/allgames.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-allgames.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">All Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/slot.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-slot.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">SLOT</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/blackjack.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-blackjack.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">BLACKJACK</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/404.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-racing.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">RACE</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/404.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-spin.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">SPIN WHEELS</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/404.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-lotre.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">LOTRE</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="js-nav-dropdown group relative">
+              <a href="#"
+                class="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-2xl amf   dark:text-white lg:px-5"
+                id="navDropdown-4" aria-expanded="false" role="button" data-bs-toggle="dropdown"><img
+                  src="/img/icon-profile.png" alt="" class="w-7  mr-2 shd animate-spin-slow"> PAGES
+              </a>
+              <ul
+                class="dropdown-menu dark:bg-jacarta-800 left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
+                aria-labelledby="navDropdown-4">
+                <li>
+                  <a href="/about-us.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <span class="font-display text-jacarta-700 text-sm dark:text-white">About Bitbet.io</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/leaderboard.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <span class="font-display text-jacarta-700 text-sm dark:text-white">Leaderboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/fairplay.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <span class="font-display text-jacarta-700 text-sm dark:text-white">Fairplay</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/kontak.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <span class="font-display text-jacarta-700 text-sm dark:text-white">Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group">
+              <a href="/404.html"
+                class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">Promo</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <!-- Mobile Connect Wallet / Socials -->
+        <div class="mt-10 w-full lg:hidden">
+          <a href="#"
+            class="js-wallet bg-accent shadow-accent-volume hover:bg-accent-dark block w-full rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+            WIN A LOTRE
+          </a>
+
+          <hr class="dark:bg-jacarta-600 bg-jacarta-100 my-5 h-px border-0" />
+
+          <!-- Socials -->
+          <div class="flex items-center justify-center space-x-5">
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="ml-8 hidden lg:flex xl:ml-12">
+          <!-- Profile -->
+
+          <div class="js-nav-dropdown group-dropdown relative">
+            <button
+              class="dropdown-toggle flex w-max py-1 px-1 pl-2  justify-between rounded-full text-white items-center duration-500 bg-gradient-to-br from-violet-500 to-violet-800 shadow-accent-volume border-2 border-violet-500 hover:bg-violet-800 hover:shadow-violet-500/75 hover:shadow-lg amf"
+              id="profileDropdown" aria-expanded="false" data-bs-toggle="dropdown" aria-label="profile">
+              <span class="font-display text-jacarta-700 text-sm dark:text-white mr-2 ">10.000</span>
+              <span class="bg-gray-100 rounded-full p-[0.375rem]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  class="fill-accent  h-4 w-4">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="dropdown-menu dark:bg-jacarta-800 group-dropdown-hover:opacity-100 group-dropdown-hover:visible !-right-4 !top-[85%] !left-auto z-10 hidden min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full lg:invisible lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl"
+              aria-labelledby="profileDropdown">
+              <div class="dark:border-jacarta-600 border-jacarta-100 mx-5 mb-6 rounded-lg border p-4">
+                <span class="dark:text-jacarta-200 text-sm font-medium tracking-tight">Balance</span>
+                <div class="flex items-center">
+                  <img src="/img/icon-chip.png" class="w-10" alt="">
+                  <span class="text-green text-2xl font-bold amf ml-2">10.000</span>
+                </div>
+              </div>
+              <a href="/profile.html"
+                class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  class="fill-jacarta-700 h-4 w-4 transition-colors dark:fill-white">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z">
+                  </path>
+                </svg>
+                <span class="font-display text-jacarta-700 mt-1 text-sm dark:text-white">My Profile</span>
+              </a>
+              <a href="#"
+                class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  class="fill-jacarta-700 h-4 w-4 transition-colors dark:fill-white">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z" />
+                </svg>
+                <span class="font-display text-jacarta-700 mt-1 text-sm dark:text-white">Sign out</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Dark Mode -->
+          <a href="#"
+            class="border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]">
+            <img src="/img/icon-chat.png" class="w-10" alt="">
+          </a>
+        </div>
       </div>
-    </header>
 
-    <main>
-      <!-- Hero -->
-      <section class="relative h-screen py-6" id="intro">
-        <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
-          <img
-            src="img/hero/landing_hero.jpg"
-            class="h-full w-full object-cover"
-            alt="Xhibiter | NFT Marketplace HTML Template"
-          />
-        </picture>
+      <!-- Mobile Menu Actions -->
+      <div class="ml-auto flex lg:hidden">
+        <!-- Profile -->
+        <button
+          class="dropdown-toggle border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent flex h-10 px-2  items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+          id="profileDropdown" aria-expanded="false" data-bs-toggle="dropdown" aria-label="profile">
+          <span class="font-display text-jacarta-700 text-sm dark:text-white mr-2 ">AllGames</span>
+          <span class="bg-light-base rounded-full p-[0.375rem]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              class="fill-jacarta-700 h-4 w-4">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
+            </svg>
+          </span>
+        </button>
 
-        <div class="container h-full">
-          <div class="flex h-full flex-col items-center justify-center">
-            <div class="mb-6 inline-flex space-x-3">
-              <div class="bg-jacarta-900/40 flex h-10 w-10 items-center justify-center rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33" class="w-5">
-                  <g clip-path="url(#prefix__clip0)">
-                    <path
-                      fill="#38bdf8"
-                      fill-rule="evenodd"
-                      d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-                      clip-rule="evenodd"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="prefix__clip0"><path fill="#fff" d="M0 0h54v32.4H0z" /></clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <div class="bg-jacarta-900/40 flex h-10 w-10 items-center justify-center rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774 875.7" class="w-4">
-                  <title>webpack</title>
-                  <path fill="#FFF" d="M387 0l387 218.9v437.9L387 875.7 0 656.8V218.9z" />
-                  <path
-                    fill="#8ed6fb"
-                    d="M704.9 641.7L399.8 814.3V679.9l190.1-104.6 115 66.4zm20.9-18.9V261.9l-111.6 64.5v232l111.6 64.4zM67.9 641.7L373 814.3V679.9L182.8 575.3 67.9 641.7zM47 622.8V261.9l111.6 64.5v232L47 622.8zm13.1-384.3L373 61.5v129.9L172.5 301.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z"
-                  />
-                  <path
-                    fill="#1c78c0"
-                    d="M373 649.3L185.4 546.1V341.8L373 450.1v199.2zm26.8 0l187.6-103.1V341.8L399.8 450.1v199.2zm-13.4-207zM198.1 318.2l188.3-103.5 188.3 103.5-188.3 108.7-188.3-108.7z"
-                  />
-                </svg>
-              </div>
-              <div class="bg-jacarta-900/40 flex h-10 w-10 items-center justify-center rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="25.534"
-                  height="25.532"
-                  viewBox="0 0 25.534 25.532"
-                  class="w-6"
-                >
-                  <defs>
-                    <style>
-                      .cls-1 {
-                        fill: #fbde34;
-                      }
-                    </style>
-                  </defs>
-                  <circle
-                    id="Ellipse_1_copy_3"
-                    data-name="Ellipse 1 copy 3"
-                    class="cls-1"
-                    cx="12.767"
-                    cy="12.766"
-                    r="12.767"
-                  />
-                  <image
-                    id="_1_ktJUMJO60oHoluiEV6KBmA"
-                    data-name="1_ktJUMJO60oHoluiEV6KBmA"
-                    x="2.594"
-                    y="2.594"
-                    width="20"
-                    height="20"
-                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAADvklEQVRIia3WbWhWZRgH8N/Zs81wzpfpdE3BwsISExJLCBM1QymKXiFL7ENgkKVRHypNRWvUpyioGAQKmhqZmGYfQpNyvgWaTUzRbKyy+TLNKTbnnm0n7j1n+mzOtnL/D+c557nPuf/39fK/ritKV43TDRRiAkajGPk4h8PYjaqutsjtYv1OLMQD6PUv7+3H+1iJps5eyLnGhyVYjb14tAuSgDFYhkpM6S7ReOzDDERdEHTEKGzGgo4LHV0XSLagz38kyEY4/NsowPzOLBqC9ddJko03MLMzoo9wYw+RtOFDDMwmuheP9zBJQL+2eLXpaB0ei1vISZEKTkyhJYniedKnyeuXqCgk8EnSl4hSxE3kDcAgnCJ9juhK9C9haCDqi9ogwvBRc5pDVdSdz9zXX2J4KXfchQus+YrBRdw3keZm4ovkDskcZO3XjB3FrWOIL7SzbHZuovigdKneXDjJzFdjp84wqIij1Sx8kdvHR56eG9u+h+M1zJ9LWVlEQ0ZlU2fFdu3lp28jqfyrVDslNxFbBnFGOTW1vDWPF16P+At92bqKtes5WhEpGsbPPyZFqISlr8S2/UD1zsjwYHk1cXPGrQlGpxbNK30E97RmRj6N9XzxDQ0NnKrlu62MvCnSr5TPN7BmE+PHRSY+nBHC7g3BAwwrYd8R4rqo1c1RE3F8xaSQdXlXpUof9h9m9WcsX0dVJcNGUrk5UjqEyQ/G5syO1Z+mrDw2YgRlSyKFN/DMnNimjeSUtNsyPxDVZf8TDnHwKIteoqIicvBA5O6HObaLgl5UbI/s+DLy8XI2ruDAL0yfwKznWFWeqVhbd8Yda86Z8Hgk275gbksL7y1j3++x2t+YNo3GusjMl2NL3uRMTaSwL+MmMaOad8opHBTbX5nZ46GpEY3tiH4NRLsuW5MmL8XzT3HgCHu2UXOWocUseI3q46xYRe8+sTUfRG4Zy+LiSH1jbOWnDCxmw/LI5Om0nGhHtKVNsJWt2RcT5ZAakEQvTn7/RjMG43QihgKa/iC3fyYr08fIC1WyP/EJmtKZvRKMbLstb71GSaaEtD2bRO8scQNNDTQfS6rFRZprMtWj6TzxcfIKMhWj+c+MkLNIvg/habMoNLZDuLljBl4n4kQ6u9t4Qz2anSz0JFYmM0W7NrElu1H1AEKXnpOV0O3wLhb3gGVh1piWKcOdEwUsxZOZ5vC/sAKTko5wGdeagkJ/ug2fJPHrDkIs7sez2Za0oTsDZBGeSMaoMOWEdh/qchBAGBx3JLNG0GLnwD9wtDAYpf8XlgAAAABJRU5ErkJggg=="
-                  />
-                </svg>
-              </div>
-            </div>
-            <span
-              class="font-display mb-3 bg-gradient-to-r from-[#F43771] to-[#FF9567] bg-clip-text text-xl text-transparent lg:text-3xl"
-              >9x Lighter & Faster</span
-            >
-            <h1 class="font-display mb-6 text-center text-5xl text-white lg:text-6xl xl:text-7xl">NFT Marketplace</h1>
-            <p class="mx-auto mb-8 max-w-lg text-center text-lg text-white">
-              With a loading time of just about 500ms<br />Xhibiter offers unparalleled performance among others
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- end hero -->
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="js-mobile-toggle border-jacarta-100 hover:bg-accent dark:hover:bg-accent focus:bg-accent group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+          aria-label="open mobile menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+            class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M18 18v2H6v-2h12zm3-7v2H3v-2h18zm-3-7v2H6V4h12z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-      <!-- Features -->
-      <section class="relative py-24" id="features">
-        <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
-          <img src="img/gradient_light.jpg" alt="gradient" class="h-full" />
-        </picture>
-        <div class="mx-auto max-w-[90.375rem] px-4">
-          <h2 class="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">Why Choose Xhibiter?</h2>
-          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div class="text-center">
-              <img src="img/landing/google_speed.jpg" alt="google speed" class="rounded-2.5xl" />
-              <div class="mx-auto max-w-xs">
-                <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">Fast and Optimized</h3>
-                <p>The highest Google score among other templates.</p>
-              </div>
+  <main>
+    <!-- Hero -->
+    <section class="relative h-screen py-6" id="intro">
+      <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
+        <img src="img/hero/landing_hero.jpg" class="h-full w-full object-cover"
+          alt="Xhibiter | NFT Marketplace HTML Template" />
+      </picture>
+
+      <div class="container h-full">
+        <div class="flex h-full flex-col items-center justify-center">
+          <div class="mb-6 inline-flex space-x-3">
+            <div class="bg-jacarta-900/40 flex h-10 w-10 items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33" class="w-5">
+                <g clip-path="url(#prefix__clip0)">
+                  <path fill="#38bdf8" fill-rule="evenodd"
+                    d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                    clip-rule="evenodd" />
+                </g>
+                <defs>
+                  <clipPath id="prefix__clip0">
+                    <path fill="#fff" d="M0 0h54v32.4H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
-            <div class="text-center">
-              <img src="img/landing/dark_mode.jpg" alt="dark mode" class="rounded-2.5xl" />
-              <div class="mx-auto max-w-xs">
-                <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">Dark Mode</h3>
-                <p>Switch to a dark theme in a single click.</p>
-              </div>
+            <div class="bg-jacarta-900/40 flex h-10 w-10 items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774 875.7" class="w-4">
+                <title>webpack</title>
+                <path fill="#FFF" d="M387 0l387 218.9v437.9L387 875.7 0 656.8V218.9z" />
+                <path fill="#8ed6fb"
+                  d="M704.9 641.7L399.8 814.3V679.9l190.1-104.6 115 66.4zm20.9-18.9V261.9l-111.6 64.5v232l111.6 64.4zM67.9 641.7L373 814.3V679.9L182.8 575.3 67.9 641.7zM47 622.8V261.9l111.6 64.5v232L47 622.8zm13.1-384.3L373 61.5v129.9L172.5 301.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z" />
+                <path fill="#1c78c0"
+                  d="M373 649.3L185.4 546.1V341.8L373 450.1v199.2zm26.8 0l187.6-103.1V341.8L399.8 450.1v199.2zm-13.4-207zM198.1 318.2l188.3-103.5 188.3 103.5-188.3 108.7-188.3-108.7z" />
+              </svg>
             </div>
-            <div class="text-center">
-              <img src="img/landing/stack.jpg" alt="modern stack" class="rounded-2.5xl" />
-              <div class="mx-auto max-w-xs">
-                <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">Modern Stack</h3>
-                <p>Xhibiter built using the most modern tools, such as Webpack, Tailwind CSS and ES6</p>
-              </div>
-            </div>
-            <div class="text-center">
-              <img src="img/landing/light_and_fast.jpg" alt="9x lighter and faster" class="rounded-2.5xl" />
-              <div class="mx-auto max-w-xs">
-                <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">9x Lighter and Faster</h3>
-                <p>Thanks to the Tailwind CSS and no JS dependencies, Xhibiter is lean and lightning fast.</p>
-              </div>
-            </div>
-            <div class="text-center">
-              <img src="img/landing/ui_components.jpg" alt="100+ UI Components" class="rounded-2.5xl" />
-              <div class="mx-auto max-w-xs">
-                <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">100+ UI Components</h3>
-                <p>Modals, dropdowns, charts, tooltips, tabs, countdowns and more.</p>
-              </div>
-            </div>
-            <div class="text-center">
-              <img src="img/landing/metamask.jpg" alt="metamask" class="rounded-2.5xl" />
-              <div class="mx-auto max-w-xs">
-                <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">Metamask Integrated</h3>
-                <p>The most popular crypto wallet & gateway to blockchain apps.</p>
-              </div>
+            <div class="bg-jacarta-900/40 flex h-10 w-10 items-center justify-center rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.534"
+                height="25.532" viewBox="0 0 25.534 25.532" class="w-6">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fbde34;
+                    }
+                  </style>
+                </defs>
+                <circle id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-1" cx="12.767" cy="12.766"
+                  r="12.767" />
+                <image id="_1_ktJUMJO60oHoluiEV6KBmA" data-name="1_ktJUMJO60oHoluiEV6KBmA" x="2.594" y="2.594"
+                  width="20" height="20"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAADvklEQVRIia3WbWhWZRgH8N/Zs81wzpfpdE3BwsISExJLCBM1QymKXiFL7ENgkKVRHypNRWvUpyioGAQKmhqZmGYfQpNyvgWaTUzRbKyy+TLNKTbnnm0n7j1n+mzOtnL/D+c557nPuf/39fK/ritKV43TDRRiAkajGPk4h8PYjaqutsjtYv1OLMQD6PUv7+3H+1iJps5eyLnGhyVYjb14tAuSgDFYhkpM6S7ReOzDDERdEHTEKGzGgo4LHV0XSLagz38kyEY4/NsowPzOLBqC9ddJko03MLMzoo9wYw+RtOFDDMwmuheP9zBJQL+2eLXpaB0ei1vISZEKTkyhJYniedKnyeuXqCgk8EnSl4hSxE3kDcAgnCJ9juhK9C9haCDqi9ogwvBRc5pDVdSdz9zXX2J4KXfchQus+YrBRdw3keZm4ovkDskcZO3XjB3FrWOIL7SzbHZuovigdKneXDjJzFdjp84wqIij1Sx8kdvHR56eG9u+h+M1zJ9LWVlEQ0ZlU2fFdu3lp28jqfyrVDslNxFbBnFGOTW1vDWPF16P+At92bqKtes5WhEpGsbPPyZFqISlr8S2/UD1zsjwYHk1cXPGrQlGpxbNK30E97RmRj6N9XzxDQ0NnKrlu62MvCnSr5TPN7BmE+PHRSY+nBHC7g3BAwwrYd8R4rqo1c1RE3F8xaSQdXlXpUof9h9m9WcsX0dVJcNGUrk5UjqEyQ/G5syO1Z+mrDw2YgRlSyKFN/DMnNimjeSUtNsyPxDVZf8TDnHwKIteoqIicvBA5O6HObaLgl5UbI/s+DLy8XI2ruDAL0yfwKznWFWeqVhbd8Yda86Z8Hgk275gbksL7y1j3++x2t+YNo3GusjMl2NL3uRMTaSwL+MmMaOad8opHBTbX5nZ46GpEY3tiH4NRLsuW5MmL8XzT3HgCHu2UXOWocUseI3q46xYRe8+sTUfRG4Zy+LiSH1jbOWnDCxmw/LI5Om0nGhHtKVNsJWt2RcT5ZAakEQvTn7/RjMG43QihgKa/iC3fyYr08fIC1WyP/EJmtKZvRKMbLstb71GSaaEtD2bRO8scQNNDTQfS6rFRZprMtWj6TzxcfIKMhWj+c+MkLNIvg/habMoNLZDuLljBl4n4kQ6u9t4Qz2anSz0JFYmM0W7NrElu1H1AEKXnpOV0O3wLhb3gGVh1piWKcOdEwUsxZOZ5vC/sAKTko5wGdeagkJ/ug2fJPHrDkIs7sez2Za0oTsDZBGeSMaoMOWEdh/qchBAGBx3JLNG0GLnwD9wtDAYpf8XlgAAAABJRU5ErkJggg==" />
+              </svg>
             </div>
           </div>
+          <span
+            class="font-display mb-3 bg-gradient-to-r from-[#F43771] to-[#FF9567] bg-clip-text text-xl text-transparent lg:text-3xl">9x
+            Lighter & Faster</span>
+          <h1 class="font-display mb-6 text-center text-5xl text-white lg:text-6xl xl:text-7xl">NFT Marketplace</h1>
+          <p class="mx-auto mb-8 max-w-lg text-center text-lg text-white">
+            With a loading time of just about 500ms<br />Xhibiter offers unparalleled performance among others
+          </p>
         </div>
-      </section>
-      <!-- end features -->
+      </div>
+    </section>
+    <!-- end hero -->
 
-      <!-- Pages -->
-      <section class="py-24" id="pages">
-        <div class="mx-auto max-w-[90.375rem] px-4">
-          <h2 class="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">Pages for Every Need</h2>
-
-          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <a
-              href="index.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/home_1.jpg" alt="home 1" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Home 1</h3>
-            </a>
-
-            <a
-              href="home-2.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/home_2.jpg" alt="home 2" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Home 2</h3>
-            </a>
-
-            <a
-              href="home-3.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/home_3.jpg" alt="home 3" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Home 3</h3>
-            </a>
-
-            <a
-              href="collections.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/collections.jpg" alt="Collections" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Collections</h3>
-            </a>
-
-            <a
-              href="item.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/item.jpg" alt="item" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Item Details</h3>
-            </a>
-
-            <a
-              href="collection.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/collection.jpg" alt="Collection" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Collection</h3>
-            </a>
-
-            <a
-              href="activity.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/activity.jpg" alt="activity" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Activity</h3>
-            </a>
-
-            <a
-              href="rankings.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/rankings.jpg" alt="rankings" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Rankings</h3>
-            </a>
-
-            <a
-              href="user.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/user.jpg" alt="user" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">User</h3>
-            </a>
-
-            <a
-              href="edit-profile.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/edit_profile.jpg" alt="Edit Profile" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Edit Profile</h3>
-            </a>
-
-            <a
-              href="about.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/about.jpg" alt="about" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">About</h3>
-            </a>
-
-            <a
-              href="contact.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/contact.jpg" alt="contact" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Contact</h3>
-            </a>
-
-            <a
-              href="wallet.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/wallet.jpg" alt="wallet" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Wallet</h3>
-            </a>
-
-            <a
-              href="create.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/create.jpg" alt="create" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Create</h3>
-            </a>
-
-            <a
-              href="login.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/login.jpg" alt="login" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Login</h3>
-            </a>
-
-            <a
-              href="404.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/404.jpg" alt="404" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Page 404</h3>
-            </a>
-
-            <a
-              href="blog.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/blog.jpg" alt="blog" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Blog</h3>
-            </a>
-
-            <a
-              href="single-post.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/single_post.jpg" alt="Single post" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Single Post</h3>
-            </a>
-
-            <a
-              href="newsletter.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/newsletter.jpg" alt="newsletter" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Newsletter</h3>
-            </a>
-
-            <a
-              href="help-center.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/help_center.jpg" alt="Help Center" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Help Center</h3>
-            </a>
-
-            <a
-              href="platform-status.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/platform_status.jpg" alt="platform status" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Platform Status</h3>
-            </a>
-
-            <a
-              href="partners.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/partners.jpg" alt="partners" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Partners</h3>
-            </a>
-
-            <a
-              href="tos.html"
-              class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg"
-            >
-              <img class="w-full" src="img/pages/tos.jpg" alt="tos" />
-              <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Terms of Service</h3>
-            </a>
+    <!-- Features -->
+    <section class="relative py-24" id="features">
+      <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
+        <img src="img/gradient_light.jpg" alt="gradient" class="h-full" />
+      </picture>
+      <div class="mx-auto max-w-[90.375rem] px-4">
+        <h2 class="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">Why Choose Xhibiter?</h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="text-center">
+            <img src="img/landing/google_speed.jpg" alt="google speed" class="rounded-2.5xl" />
+            <div class="mx-auto max-w-xs">
+              <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">Fast and Optimized</h3>
+              <p>The highest Google score among other templates.</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="img/landing/dark_mode.jpg" alt="dark mode" class="rounded-2.5xl" />
+            <div class="mx-auto max-w-xs">
+              <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">Dark Mode</h3>
+              <p>Switch to a dark theme in a single click.</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="img/landing/stack.jpg" alt="modern stack" class="rounded-2.5xl" />
+            <div class="mx-auto max-w-xs">
+              <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">Modern Stack</h3>
+              <p>Xhibiter built using the most modern tools, such as Webpack, Tailwind CSS and ES6</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="img/landing/light_and_fast.jpg" alt="9x lighter and faster" class="rounded-2.5xl" />
+            <div class="mx-auto max-w-xs">
+              <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">9x Lighter and Faster</h3>
+              <p>Thanks to the Tailwind CSS and no JS dependencies, Xhibiter is lean and lightning fast.</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="img/landing/ui_components.jpg" alt="100+ UI Components" class="rounded-2.5xl" />
+            <div class="mx-auto max-w-xs">
+              <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">100+ UI Components</h3>
+              <p>Modals, dropdowns, charts, tooltips, tabs, countdowns and more.</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="img/landing/metamask.jpg" alt="metamask" class="rounded-2.5xl" />
+            <div class="mx-auto max-w-xs">
+              <h3 class="font-display text-jacarta-700 mb-2 pt-6 text-center text-lg">Metamask Integrated</h3>
+              <p>The most popular crypto wallet & gateway to blockchain apps.</p>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- end pages -->
+      </div>
+    </section>
+    <!-- end features -->
 
-      <!-- CTA -->
-      <section
-        class="after:bg-jacarta-900/60 relative bg-cover bg-center bg-no-repeat py-40 text-center after:absolute after:inset-0"
-        style="background-image: url('img/CTA.jpg')"
-      >
-        <div class="relative z-10">
-          <h2 class="font-display mb-3 text-center text-3xl text-white">
-            Build Fast and Optimized Websites in No Time
-          </h2>
-          <p class="mb-6 text-lg text-white">One Time Payment, Lifetime Updates</p>
-          <!-- <a
+    <!-- Pages -->
+    <section class="py-24" id="pages">
+      <div class="mx-auto max-w-[90.375rem] px-4">
+        <h2 class="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">Pages for Every Need</h2>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <a href="index.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/home_1.jpg" alt="home 1" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Home 1</h3>
+          </a>
+
+          <a href="home-2.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/home_2.jpg" alt="home 2" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Home 2</h3>
+          </a>
+
+          <a href="home-3.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/home_3.jpg" alt="home 3" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Home 3</h3>
+          </a>
+
+          <a href="collections.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/collections.jpg" alt="Collections" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Collections</h3>
+          </a>
+
+          <a href="item.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/item.jpg" alt="item" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Item Details</h3>
+          </a>
+
+          <a href="collection.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/collection.jpg" alt="Collection" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Collection</h3>
+          </a>
+
+          <a href="activity.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/activity.jpg" alt="activity" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Activity</h3>
+          </a>
+
+          <a href="rankings.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/rankings.jpg" alt="rankings" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Rankings</h3>
+          </a>
+
+          <a href="user.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/user.jpg" alt="user" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">User</h3>
+          </a>
+
+          <a href="edit-profile.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/edit_profile.jpg" alt="Edit Profile" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Edit Profile</h3>
+          </a>
+
+          <a href="about.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/about.jpg" alt="about" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">About</h3>
+          </a>
+
+          <a href="contact.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/contact.jpg" alt="contact" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Contact</h3>
+          </a>
+
+          <a href="wallet.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/wallet.jpg" alt="wallet" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Wallet</h3>
+          </a>
+
+          <a href="create.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/create.jpg" alt="create" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Create</h3>
+          </a>
+
+          <a href="login.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/login.jpg" alt="login" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Login</h3>
+          </a>
+
+          <a href="404.html" class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/404.jpg" alt="404" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Page 404</h3>
+          </a>
+
+          <a href="blog.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/blog.jpg" alt="blog" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Blog</h3>
+          </a>
+
+          <a href="single-post.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/single_post.jpg" alt="Single post" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Single Post</h3>
+          </a>
+
+          <a href="newsletter.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/newsletter.jpg" alt="newsletter" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Newsletter</h3>
+          </a>
+
+          <a href="help-center.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/help_center.jpg" alt="Help Center" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Help Center</h3>
+          </a>
+
+          <a href="platform-status.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/platform_status.jpg" alt="platform status" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Platform Status</h3>
+          </a>
+
+          <a href="partners.html"
+            class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/partners.jpg" alt="partners" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Partners</h3>
+          </a>
+
+          <a href="tos.html" class="rounded-2.5xl overflow-hidden bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <img class="w-full" src="img/pages/tos.jpg" alt="tos" />
+            <h3 class="font-display text-jacarta-700 py-6 text-center text-base">Terms of Service</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end pages -->
+
+    <!-- CTA -->
+    <section
+      class="after:bg-jacarta-900/60 relative bg-cover bg-center bg-no-repeat py-40 text-center after:absolute after:inset-0"
+      style="background-image: url('img/CTA.jpg')">
+      <div class="relative z-10">
+        <h2 class="font-display mb-3 text-center text-3xl text-white">
+          Build Fast and Optimized Websites in No Time
+        </h2>
+        <p class="mb-6 text-lg text-white">One Time Payment, Lifetime Updates</p>
+        <!-- <a
             href="#"
             class="bg-accent shadow-accent-volume hover:bg-accent-dark inline-block rounded-full py-3 px-8 text-center font-semibold text-white transition-all"
             >Try Xhibiter Today</a
           > -->
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="bg-jacarta-800 py-6 text-center">
-      <span class="text-jacarta-300 text-sm"
-        >&copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        Xhibiter — Made by
-        <a href="https://deothemes.com" class="hover:text-accent">DeoThemes</a></span
-      >
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-jacarta-800 py-6 text-center">
+    <span class="text-jacarta-300 text-sm">&copy;
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      Xhibiter — Made by
+      <a href="https://deothemes.com" class="hover:text-accent">DeoThemes</a>
+    </span>
+  </footer>
 
-    <!-- JS Scripts -->
-    <script src="./js/app.bundle.js"></script>
-  </body>
+  <!-- JS Scripts -->
+  <script src="./js/app.bundle.js"></script>
+</body>
+
 </html>
