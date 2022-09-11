@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -29,6 +30,32 @@
 
       ;
     }
+
+    .shd {
+      filter: drop-shadow(0px 0px 5px rgb(251, 0, 255));
+    }
+
+    .inshd {
+      -moz-box-shadow: inset 0 0 10px #0000003e;
+      -webkit-box-shadow: inset 0 0 10px #0000008a;
+      box-shadow: inset 0 0 20px #00000027;
+
+    }
+
+    .xswiper {
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
   </style>
 </head>
 
@@ -39,8 +66,7 @@
     <div class="flex items-center px-6 py-2 xl:px-24">
       <!-- Logo -->
 
-      <p href="/index.html"
-        class="text-2xl font-bold text-white hover:text-yellow-500 amf  duration-300 animate-gradient">bitbet.io</p>
+      <a href="/index.html" class="text-3xl amf  duration-300 animate-gradient">bitbet.io</a>
 
 
       <!-- Menu / Actions -->
@@ -50,8 +76,8 @@
         <div
           class="t-0 dark:bg-jacarta-800 fixed left-0 z-10 flex w-full items-center justify-between bg-white p-6 lg:hidden">
           <!-- Mobile Logo -->
-          <p class="text-2xl font-bold text-white hover:text-yellow-500 amf  duration-300 animate-gradient">bitbet.io
-          </p>
+          <a href="/index.html"
+            class="text-2xl font-bold text-white hover:text-yellow-500 amf  duration-300 animate-gradient">bitbet.io</a>
 
 
 
@@ -81,19 +107,33 @@
             </li>
             <li class="group js-nav-dropdown nav-item dropdown relative">
               <a href="/allgames.html"
-                class="dropdown-toggle text-jacarta-700 text-2xl amf text-white hover:text-accent  focus:text-accent   flex items-center justify-between py-3.5 lg:px-5"
+                class="dropdown-toggle text-jacarta-700 text-xl amf text-white hover:text-accent  focus:text-accent   flex items-center justify-between py-3.5 lg:px-5"
                 id="navDropdown-3" aria-expanded="false" role="button" data-bs-toggle="dropdown">
                 <img src="/img/icon-allgames.png" alt="" class="w-7  mr-2 shd animate-spin-slow"> GAMES
 
               </a>
               <ul
-                class="dropdown-menu dark:bg-jacarta-800 -left-6 top-[85%] z-10 hidden grid-flow-col grid-rows-3 gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:!grid lg:translate-y-4 lg:py-8 lg:px-5 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
+                class="dropdown-menu dark:bg-jacarta-800 -left-6 top-[85%] z-10 hidden grid-flow-col grid-rows-4 gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:!grid lg:translate-y-4 lg:py-8 lg:px-5 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
                 aria-labelledby="navDropdown-1">
                 <li>
                   <a href="/allgames.html"
                     class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
                     <img src="/img/icon-allgames.png" alt="" class="w-7 mr-2 shd">
-                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">All Games</span>
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">All GAMES</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/lotre.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-lotre.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">LOTRE</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/prediksi.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-prediksi.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">PREDICTION</span>
                   </a>
                 </li>
                 <li>
@@ -104,7 +144,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/blackjack.html"
+                  <a href="/404.html"
                     class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
                     <img src="/img/icon-blackjack.png" alt="" class="w-7 mr-2 shd">
                     <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">BLACKJACK</span>
@@ -124,18 +164,11 @@
                     <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">SPIN WHEELS</span>
                   </a>
                 </li>
-                <li>
-                  <a href="/404.html"
-                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                    <img src="/img/icon-lotre.png" alt="" class="w-7 mr-2 shd">
-                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">LOTRE</span>
-                  </a>
-                </li>
               </ul>
             </li>
             <li class="js-nav-dropdown group relative">
               <a href="#"
-                class="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-2xl amf   dark:text-white lg:px-5"
+                class="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-xl amf   dark:text-white lg:px-5"
                 id="navDropdown-4" aria-expanded="false" role="button" data-bs-toggle="dropdown"><img
                   src="/img/icon-profile.png" alt="" class="w-7  mr-2 shd animate-spin-slow"> PAGES
               </a>
@@ -145,32 +178,32 @@
                 <li>
                   <a href="/about-us.html"
                     class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                    <span class="font-display text-jacarta-700 text-sm dark:text-white">About Bitbet.io</span>
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white">About Bitbet.io</span>
                   </a>
                 </li>
                 <li>
                   <a href="/leaderboard.html"
                     class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                    <span class="font-display text-jacarta-700 text-sm dark:text-white">Leaderboard</span>
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white">Leaderboard</span>
                   </a>
                 </li>
                 <li>
                   <a href="/fairplay.html"
                     class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                    <span class="font-display text-jacarta-700 text-sm dark:text-white">Fairplay</span>
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white">Fairplay</span>
                   </a>
                 </li>
                 <li>
                   <a href="/kontak.html"
                     class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                    <span class="font-display text-jacarta-700 text-sm dark:text-white">Contact Us</span>
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white">Contact Us</span>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="group">
               <a href="/404.html"
-                class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">Promo</a>
+                class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-xl amf   dark:text-white lg:px-5 uppercase">Promo</a>
             </li>
 
           </ul>
@@ -243,14 +276,8 @@
             <button
               class="dropdown-toggle flex w-max py-1 px-1 pl-2  justify-between rounded-full text-white items-center duration-500 bg-gradient-to-br from-violet-500 to-violet-800 shadow-accent-volume border-2 border-violet-500 hover:bg-violet-800 hover:shadow-violet-500/75 hover:shadow-lg amf"
               id="profileDropdown" aria-expanded="false" data-bs-toggle="dropdown" aria-label="profile">
-              <span class="font-display text-jacarta-700 text-sm dark:text-white mr-2 ">10.000</span>
-              <span class="bg-gray-100 rounded-full p-[0.375rem]">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                  class="fill-accent  h-4 w-4">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
-                </svg>
-              </span>
+              <span class="font-display text-jacarta-700 text-md dark:text-white mr-2 ml-2 ">10.000</span>
+              <img src="/img/icon-profile.png" class="w-8" alt="">
             </button>
             <div
               class="dropdown-menu dark:bg-jacarta-800 group-dropdown-hover:opacity-100 group-dropdown-hover:visible !-right-4 !top-[85%] !left-auto z-10 hidden min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full lg:invisible lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl"
@@ -323,7 +350,6 @@
       </div>
     </div>
   </header>
-
   <main>
 
     <section class="relative pb-10 py-20 md:py-20 ">
@@ -408,7 +434,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-jacarta-900 page-footer">
+  <footer class="dark:bg-jacarta-900 page-footer bg-white">
     <div class="container">
       <div class="grid grid-cols-6 gap-x-7 gap-y-14 pt-24 pb-12 md:grid-cols-12">
         <div class="col-span-6 md:col-span-4">
@@ -472,30 +498,34 @@
         <div class="col-span-3 md:col-span-2 md:col-start-7">
           <h3 class="font-display text-jacarta-700 mb-6 text-sm dark:text-white">GAMES</h3>
           <ul class="dark:text-jacarta-300 flex flex-col space-y-1">
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Slot</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Horse Race</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Blackjack</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Roulete</a></li>
+            <li><a href="/lotre.html" class="hover:text-accent dark:hover:text-white">Lotre</a></li>
+            <li><a href="/prediksi.html" class="hover:text-accent dark:hover:text-white">Prediction</a></li>
+            <li><a href="/slot.html" class="hover:text-accent dark:hover:text-white">Slot</a></li>
+            <li><a href="/404.html" class="hover:text-accent dark:hover:text-white">Horse Race</a></li>
+            <li><a href="/404.html" class="hover:text-accent dark:hover:text-white">Blackjack</a></li>
+            <li><a href="/404.html" class="hover:text-accent dark:hover:text-white">Roulete</a></li>
           </ul>
         </div>
 
         <div class="col-span-3 md:col-span-2">
           <h3 class="font-display text-jacarta-700 mb-6 text-sm dark:text-white">PAGES</h3>
           <ul class="dark:text-jacarta-300 flex flex-col space-y-1">
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Contact & FAQ</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Promo</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">About</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Ranking</a></li>
+            <li><a href="/kontak.html" class="hover:text-accent dark:hover:text-white">Contact & FAQ</a></li>
+            <li><a href="/fairplay.html" class="hover:text-accent dark:hover:text-white">Fairplay</a></li>
+            <li><a href="/about-us.html" class="hover:text-accent dark:hover:text-white">About</a></li>
+            <li><a href="/leaderboard.html" class="hover:text-accent dark:hover:text-white">Ranking</a></li>
           </ul>
         </div>
 
         <div class="col-span-full sm:col-span-3 md:col-span-2">
           <h3 class="font-display text-jacarta-700 mb-6 text-sm dark:text-white">My Account</h3>
           <ul class="dark:text-jacarta-300 flex flex-col space-y-1">
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Sign Up</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Login</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">withdraws</a></li>
-            <li><a href="#" class="hover:text-accent dark:hover:text-white">Deposits</a></li>
+
+            <li><a href="/profile.html" class="hover:text-accent dark:hover:text-white">Profile</a></li>
+            <li><a href="/login.html" class="hover:text-accent dark:hover:text-white">Sign Up</a></li>
+            <li><a href="/login.html" class="hover:text-accent dark:hover:text-white">Login</a></li>
+            <li><a href="/profile.html" class="hover:text-accent dark:hover:text-white">withdraws</a></li>
+            <li><a href="/profile.html" class="hover:text-accent dark:hover:text-white">Deposits</a></li>
 
           </ul>
         </div>

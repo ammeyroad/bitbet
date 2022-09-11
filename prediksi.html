@@ -1,13 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>bitbet.io | game slot</title>
+
   <meta charset="utf-8" />
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="description" content="" /> <!-- Css -->
-  <link rel="stylesheet" href="./css/style2.css" /> <!-- Dark Mode JS -->
-  <script src="./js/darkMode.bundle.js"></script> <!-- Favicons -->
+  <meta name="description" content="" />
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/style2.css" />
+
+  <!-- Dark Mode JS -->
+  <script src="./js/darkMode.bundle.js"></script>
+  <!-- Favicons -->
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
@@ -15,7 +22,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
@@ -24,356 +30,387 @@
 
       ;
     }
+
+    .shd {
+      filter: drop-shadow(0px 0px 5px rgb(251, 0, 255));
+    }
+
+    .inshd {
+      -moz-box-shadow: inset 0 0 10px #0000003e;
+      -webkit-box-shadow: inset 0 0 10px #0000008a;
+      box-shadow: inset 0 0 20px #00000027;
+
+    }
+
+    .xswiper {
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
   </style>
 </head>
-<header class="js-page-header fixed top-0 z-20 w-full backdrop-blur transition-colors">
-  <div class="flex items-center px-6 py-2 xl:px-24">
-    <!-- Logo -->
 
-    <p href="/index.html"
-      class="text-2xl font-bold text-white hover:text-yellow-500 amf  duration-300 animate-gradient">bitbet.io</p>
+<body class="dark:bg-jacarta-900 font-body text-jacarta-500 overflow-x-hidden" itemscope
+  itemtype="http://schema.org/WebPage">
+  <!-- Header -->
+  <header class="js-page-header fixed top-0 z-20 w-full backdrop-blur transition-colors">
+    <div class="flex items-center px-6 py-2 xl:px-24">
+      <!-- Logo -->
+
+      <a href="/index.html" class="text-3xl amf  duration-300 animate-gradient">bitbet.io</a>
 
 
-    <!-- Menu / Actions -->
-    <div
-      class="js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent">
-      <!-- Mobile Logo / Menu Close -->
+      <!-- Menu / Actions -->
       <div
-        class="t-0 dark:bg-jacarta-800 fixed left-0 z-10 flex w-full items-center justify-between bg-white p-6 lg:hidden">
-        <!-- Mobile Logo -->
-        <p class="text-2xl font-bold text-white hover:text-yellow-500 amf  duration-300 animate-gradient">bitbet.io
-        </p>
+        class="js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent">
+        <!-- Mobile Logo / Menu Close -->
+        <div
+          class="t-0 dark:bg-jacarta-800 fixed left-0 z-10 flex w-full items-center justify-between bg-white p-6 lg:hidden">
+          <!-- Mobile Logo -->
+          <a href="/index.html"
+            class="text-2xl font-bold text-white hover:text-yellow-500 amf  duration-300 animate-gradient">bitbet.io</a>
 
 
 
-        <!-- Mobile Menu Close -->
-        <button
-          class="js-mobile-close border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-          aria-label="close mobile menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-            class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path
-              d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
-          </svg>
-        </button>
-      </div>
-
-      <!-- Primary Nav -->
-      <nav class="navbar w-full">
-        <ul class="flex flex-col lg:flex-row">
-          <li class="group lg:hidden">
-            <a href="#"
-              class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:hover:bg-jacarta-800 dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">gra</a>
-          </li>
-          <li class="group lg:hidden">
-            <a href="#"
-              class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">gra</a>
-          </li>
-          <li class="group js-nav-dropdown nav-item dropdown relative">
-            <a href="/allgames.html"
-              class="dropdown-toggle text-jacarta-700 text-2xl amf text-white hover:text-accent  focus:text-accent   flex items-center justify-between py-3.5 lg:px-5"
-              id="navDropdown-3" aria-expanded="false" role="button" data-bs-toggle="dropdown">
-              <img src="/img/icon-allgames.png" alt="" class="w-7  mr-2 shd animate-spin-slow"> GAMES
-
-            </a>
-            <ul
-              class="dropdown-menu dark:bg-jacarta-800 -left-6 top-[85%] z-10 hidden grid-flow-col grid-rows-3 gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:!grid lg:translate-y-4 lg:py-8 lg:px-5 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
-              aria-labelledby="navDropdown-1">
-              <li>
-                <a href="/allgames.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <img src="/img/icon-allgames.png" alt="" class="w-7 mr-2 shd">
-                  <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">All Games</span>
-                </a>
-              </li>
-              <li>
-                <a href="/slot.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <img src="/img/icon-slot.png" alt="" class="w-7 mr-2 shd">
-                  <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">SLOT</span>
-                </a>
-              </li>
-              <li>
-                <a href="/blackjack.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <img src="/img/icon-blackjack.png" alt="" class="w-7 mr-2 shd">
-                  <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">BLACKJACK</span>
-                </a>
-              </li>
-              <li>
-                <a href="/404.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <img src="/img/icon-racing.png" alt="" class="w-7 mr-2 shd">
-                  <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">RACE</span>
-                </a>
-              </li>
-              <li>
-                <a href="/404.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <img src="/img/icon-spin.png" alt="" class="w-7 mr-2 shd">
-                  <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">SPIN WHEELS</span>
-                </a>
-              </li>
-              <li>
-                <a href="/404.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <img src="/img/icon-lotre.png" alt="" class="w-7 mr-2 shd">
-                  <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">LOTRE</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="js-nav-dropdown group relative">
-            <a href="#"
-              class="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-2xl amf   dark:text-white lg:px-5"
-              id="navDropdown-4" aria-expanded="false" role="button" data-bs-toggle="dropdown"><img
-                src="/img/icon-profile.png" alt="" class="w-7  mr-2 shd animate-spin-slow"> PAGES
-            </a>
-            <ul
-              class="dropdown-menu dark:bg-jacarta-800 left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
-              aria-labelledby="navDropdown-4">
-              <li>
-                <a href="/about-us.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <span class="font-display text-jacarta-700 text-sm dark:text-white">About Bitbet.io</span>
-                </a>
-              </li>
-              <li>
-                <a href="/leaderboard.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <span class="font-display text-jacarta-700 text-sm dark:text-white">Leaderboard</span>
-                </a>
-              </li>
-              <li>
-                <a href="/fairplay.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <span class="font-display text-jacarta-700 text-sm dark:text-white">Fairplay</span>
-                </a>
-              </li>
-              <li>
-                <a href="/kontak.html"
-                  class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                  <span class="font-display text-jacarta-700 text-sm dark:text-white">Contact Us</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="group">
-            <a href="/404.html"
-              class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">Promo</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <!-- Mobile Connect Wallet / Socials -->
-      <div class="mt-10 w-full lg:hidden">
-        <a href="#"
-          class="js-wallet bg-accent shadow-accent-volume hover:bg-accent-dark block w-full rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-          WIN A LOTRE
-        </a>
-
-        <hr class="dark:bg-jacarta-600 bg-jacarta-100 my-5 h-px border-0" />
-
-        <!-- Socials -->
-        <div class="flex items-center justify-center space-x-5">
-          <a href="#" class="group">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
-              class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path
-                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
-              </path>
-            </svg>
-          </a>
-          <a href="#" class="group">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
-              class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path
-                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-              </path>
-            </svg>
-          </a>
-          <a href="#" class="group">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord"
-              class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path
-                d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
-              </path>
-            </svg>
-          </a>
-          <a href="#" class="group">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
-              class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path
-                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-              </path>
-            </svg>
-          </a>
-          <a href="#" class="group">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok"
-              class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path
-                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
-              </path>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Actions -->
-      <div class="ml-8 hidden lg:flex xl:ml-12">
-        <!-- Profile -->
-
-        <div class="js-nav-dropdown group-dropdown relative">
+          <!-- Mobile Menu Close -->
           <button
-            class="dropdown-toggle flex w-max py-1 px-1 pl-2  justify-between rounded-full text-white items-center duration-500 bg-gradient-to-br from-violet-500 to-violet-800 shadow-accent-volume border-2 border-violet-500 hover:bg-violet-800 hover:shadow-violet-500/75 hover:shadow-lg amf"
-            id="profileDropdown" aria-expanded="false" data-bs-toggle="dropdown" aria-label="profile">
-            <span class="font-display text-jacarta-700 text-sm dark:text-white mr-2 ">10.000</span>
-            <span class="bg-gray-100 rounded-full p-[0.375rem]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                class="fill-accent  h-4 w-4">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
-              </svg>
-            </span>
+            class="js-mobile-close border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+            aria-label="close mobile menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+            </svg>
           </button>
-          <div
-            class="dropdown-menu dark:bg-jacarta-800 group-dropdown-hover:opacity-100 group-dropdown-hover:visible !-right-4 !top-[85%] !left-auto z-10 hidden min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full lg:invisible lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl"
-            aria-labelledby="profileDropdown">
-            <div class="dark:border-jacarta-600 border-jacarta-100 mx-5 mb-6 rounded-lg border p-4">
-              <span class="dark:text-jacarta-200 text-sm font-medium tracking-tight">Balance</span>
-              <div class="flex items-center">
-                <img src="/img/icon-chip.png" class="w-10" alt="">
-                <span class="text-green text-2xl font-bold amf ml-2">10.000</span>
-              </div>
-            </div>
-            <a href="/profile.html"
-              class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                class="fill-jacarta-700 h-4 w-4 transition-colors dark:fill-white">
-                <path fill="none" d="M0 0h24v24H0z"></path>
+        </div>
+
+        <!-- Primary Nav -->
+        <nav class="navbar w-full">
+          <ul class="flex flex-col lg:flex-row">
+            <li class="group lg:hidden">
+              <a href="#"
+                class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:hover:bg-jacarta-800 dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">gra</a>
+            </li>
+            <li class="group lg:hidden">
+              <a href="#"
+                class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">gra</a>
+            </li>
+            <li class="group js-nav-dropdown nav-item dropdown relative">
+              <a href="/allgames.html"
+                class="dropdown-toggle text-jacarta-700 text-xl amf text-white hover:text-accent  focus:text-accent   flex items-center justify-between py-3.5 lg:px-5"
+                id="navDropdown-3" aria-expanded="false" role="button" data-bs-toggle="dropdown">
+                <img src="/img/icon-allgames.png" alt="" class="w-7  mr-2 shd animate-spin-slow"> GAMES
+
+              </a>
+              <ul
+                class="dropdown-menu dark:bg-jacarta-800 -left-6 top-[85%] z-10 hidden grid-flow-col grid-rows-4 gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:!grid lg:translate-y-4 lg:py-8 lg:px-5 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
+                aria-labelledby="navDropdown-1">
+                <li>
+                  <a href="/allgames.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-allgames.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">All GAMES</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/lotre.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-lotre.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">LOTRE</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/prediksi.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-prediksi.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">PREDICTION</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/slot.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-slot.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">SLOT</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/404.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-blackjack.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">BLACKJACK</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/404.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-racing.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">RACE</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/404.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <img src="/img/icon-spin.png" alt="" class="w-7 mr-2 shd">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white pr-3">SPIN WHEELS</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="js-nav-dropdown group relative">
+              <a href="#"
+                class="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-xl amf   dark:text-white lg:px-5"
+                id="navDropdown-4" aria-expanded="false" role="button" data-bs-toggle="dropdown"><img
+                  src="/img/icon-profile.png" alt="" class="w-7  mr-2 shd animate-spin-slow"> PAGES
+              </a>
+              <ul
+                class="dropdown-menu dark:bg-jacarta-800 left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2"
+                aria-labelledby="navDropdown-4">
+                <li>
+                  <a href="/about-us.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white">About Bitbet.io</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/leaderboard.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white">Leaderboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/fairplay.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white">Fairplay</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/kontak.html"
+                    class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
+                    <span class="font-display text-jacarta-700 text-lg dark:text-white">Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="group">
+              <a href="/404.html"
+                class="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-xl amf   dark:text-white lg:px-5 uppercase">Promo</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <!-- Mobile Connect Wallet / Socials -->
+        <div class="mt-10 w-full lg:hidden">
+          <a href="#"
+            class="js-wallet bg-accent shadow-accent-volume hover:bg-accent-dark block w-full rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+            WIN A LOTRE
+          </a>
+
+          <hr class="dark:bg-jacarta-600 bg-jacarta-100 my-5 h-px border-0" />
+
+          <!-- Socials -->
+          <div class="flex items-center justify-center space-x-5">
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
-                  d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z">
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
                 </path>
               </svg>
-              <span class="font-display text-jacarta-700 mt-1 text-sm dark:text-white">My Profile</span>
             </a>
-            <a href="#"
-              class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                class="fill-jacarta-700 h-4 w-4 transition-colors dark:fill-white">
-                <path fill="none" d="M0 0h24v24H0z" />
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z" />
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path>
               </svg>
-              <span class="font-display text-jacarta-700 mt-1 text-sm dark:text-white">Sign out</span>
+            </a>
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="group">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok"
+                class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                </path>
+              </svg>
             </a>
           </div>
         </div>
 
-        <!-- Dark Mode -->
-        <a href="#"
-          class="border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]">
-          <img src="/img/icon-chat.png" class="w-10" alt="">
-        </a>
-      </div>
-    </div>
+        <!-- Actions -->
+        <div class="ml-8 hidden lg:flex xl:ml-12">
+          <!-- Profile -->
 
-    <!-- Mobile Menu Actions -->
-    <div class="ml-auto flex lg:hidden">
-      <!-- Profile -->
-      <button
-        class="dropdown-toggle border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent flex h-10 px-2  items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-        id="profileDropdown" aria-expanded="false" data-bs-toggle="dropdown" aria-label="profile">
-        <span class="font-display text-jacarta-700 text-sm dark:text-white mr-2 ">AllGames</span>
-        <span class="bg-light-base rounded-full p-[0.375rem]">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-            class="fill-jacarta-700 h-4 w-4">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
-          </svg>
-        </span>
-      </button>
-
-      <!-- Mobile Menu Toggle -->
-      <button
-        class="js-mobile-toggle border-jacarta-100 hover:bg-accent dark:hover:bg-accent focus:bg-accent group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-        aria-label="open mobile menu">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-          class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white">
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path d="M18 18v2H6v-2h12zm3-7v2H3v-2h18zm-3-7v2H6V4h12z" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
-
-<body class="dark:bg-jacarta-900 font-body text-jacarta-500 overflow-x-hidden" itemscope
-  itemtype="http://schema.org/WebPage">
-  <main>
-    <section
-      class="after:bg-jacarta-900/60 relative bg-cover bg-center bg-no-repeat py-24 md:py-32  after:absolute after:inset-0"
-      style="background-image: url('./img/page-title/wallet_banner.jpg')">
-      <div class="container relative z-10">
-        <h1 class="font-display text-center text-4xl font-medium text-white uppercase">Prediksi</h1>
-      </div>
-    </section>
-    <section class="relative -mt-14 md:-mt-24 md:mb-48">
-      <picture class="pointer-events-none absolute inset-x-0 bottom-20 -z-10 hidden dark:block"> <img
-          src="img/gradient-black-2.jpg" alt="gradient dark" class="opacity-10 "> </picture>
-      <div class="p-5 ">
-        <div class="max-w-screen-lg mx-auto text-white ">
-          <div class="lg:flex">
-            <div class="lg:w-full ">
-              <div
-                class="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 rounded-2.5xl border bg-white p-2 md:p-6 ">
-                <canvas id="buyers" class="w-full text-white"></canvas>
+          <div class="js-nav-dropdown group-dropdown relative">
+            <button
+              class="dropdown-toggle flex w-max py-1 px-1 pl-2  justify-between rounded-full text-white items-center duration-500 bg-gradient-to-br from-violet-500 to-violet-800 shadow-accent-volume border-2 border-violet-500 hover:bg-violet-800 hover:shadow-violet-500/75 hover:shadow-lg amf"
+              id="profileDropdown" aria-expanded="false" data-bs-toggle="dropdown" aria-label="profile">
+              <span class="font-display text-jacarta-700 text-md dark:text-white mr-2 ml-2 ">10.000</span>
+              <img src="/img/icon-profile.png" class="w-8" alt="">
+            </button>
+            <div
+              class="dropdown-menu dark:bg-jacarta-800 group-dropdown-hover:opacity-100 group-dropdown-hover:visible !-right-4 !top-[85%] !left-auto z-10 hidden min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full lg:invisible lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl"
+              aria-labelledby="profileDropdown">
+              <div class="dark:border-jacarta-600 border-jacarta-100 mx-5 mb-6 rounded-lg border p-4">
+                <span class="dark:text-jacarta-200 text-sm font-medium tracking-tight">Balance</span>
+                <div class="flex items-center">
+                  <img src="/img/icon-chip.png" class="w-10" alt="">
+                  <span class="text-green text-2xl font-bold amf ml-2">10.000</span>
+                </div>
               </div>
-              <div
-                class="relative max-w-screen-md md:-mt-20   mt-0  z-10 mx-auto bg-gradient-to-br from-violet-500 via-violet-700 to-violet-900 hover:bg-violet-700 hover:via-violet-700 hover:to-violet-500 border-2 border-violet-900 inner-shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-2xl mb-12 shadow-lg hover:shadow-violet-900 duration-500 border-b-8  border-violet-700">
-                <div class="grid grid-cols-2 mx-auto gap-2 p-4">
-                  <div class="relative ">
-                    <p class="text-sm amf text-white">Bet</p> <input name="name"
-                      class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-3 w-full md:py-3  hover:ring-2 text-white"
-                      id="name" type="text" required placeholder="nominal" />
-                  </div>
-                  <div class="relative">
-                    <p class="text-sm amf text-white">Durasi</p> <input name="name"
-                      class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-3 w-full  md:py-3  hover:ring-2 text-white"
-                      id="name" type="text" required placeholder="1 minute drop" />
-                  </div>
-                  <div class="relative col-span-2">
-                    <div class="flex justify-center">
-                      <div
-                        class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-white items-center duration-500 bg-gradient-to-br from-green-500 to-green-800 border-b-4 border-green-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
-                        <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
-                          </svg>
+              <a href="/profile.html"
+                class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  class="fill-jacarta-700 h-4 w-4 transition-colors dark:fill-white">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z">
+                  </path>
+                </svg>
+                <span class="font-display text-jacarta-700 mt-1 text-sm dark:text-white">My Profile</span>
+              </a>
+              <a href="#"
+                class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  class="fill-jacarta-700 h-4 w-4 transition-colors dark:fill-white">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11V8l-5 4 5 4v-3h8v-2H7z" />
+                </svg>
+                <span class="font-display text-jacarta-700 mt-1 text-sm dark:text-white">Sign out</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Dark Mode -->
+          <a href="#"
+            class="border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]">
+            <img src="/img/icon-chat.png" class="w-10" alt="">
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Actions -->
+      <div class="ml-auto flex lg:hidden">
+        <!-- Profile -->
+        <button
+          class="dropdown-toggle border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent flex h-10 px-2  items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+          id="profileDropdown" aria-expanded="false" data-bs-toggle="dropdown" aria-label="profile">
+          <span class="font-display text-jacarta-700 text-sm dark:text-white mr-2 ">AllGames</span>
+          <span class="bg-light-base rounded-full p-[0.375rem]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              class="fill-jacarta-700 h-4 w-4">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
+            </svg>
+          </span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="js-mobile-toggle border-jacarta-100 hover:bg-accent dark:hover:bg-accent focus:bg-accent group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+          aria-label="open mobile menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+            class="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M18 18v2H6v-2h12zm3-7v2H3v-2h18zm-3-7v2H6V4h12z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <body class="dark:bg-jacarta-900 font-body text-jacarta-500 overflow-x-hidden" itemscope
+    itemtype="http://schema.org/WebPage">
+    <main>
+      <section
+        class="after:bg-jacarta-900/60 relative bg-cover bg-center bg-no-repeat py-24 md:py-32  after:absolute after:inset-0"
+        style="background-image: url('./img/page-title/wallet_banner.jpg')">
+        <div class="container relative z-10">
+          <h1 class="font-display text-center text-4xl font-medium text-white uppercase">Prediksi</h1>
+        </div>
+      </section>
+      <section class="relative -mt-14 md:-mt-24 md:mb-48">
+        <picture class="pointer-events-none absolute inset-x-0 bottom-20 -z-10 hidden dark:block"> <img
+            src="img/gradient-black-2.jpg" alt="gradient dark" class="opacity-10 "> </picture>
+        <div class="p-5 ">
+          <div class="max-w-screen-lg mx-auto text-white ">
+            <div class="lg:flex">
+              <div class="lg:w-full ">
+                <div
+                  class="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 rounded-2.5xl border bg-white p-2 md:p-6 ">
+                  <canvas id="buyers" class="w-full text-white"></canvas>
+                </div>
+                <div
+                  class="relative max-w-screen-md md:-mt-20   mt-0  z-10 mx-auto bg-gradient-to-br from-violet-500 via-violet-700 to-violet-900 hover:bg-violet-700 hover:via-violet-700 hover:to-violet-500 border-2 border-violet-900 inner-shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-2xl mb-12 shadow-lg hover:shadow-violet-900 duration-500 border-b-8  border-violet-700">
+                  <div class="grid grid-cols-2 mx-auto gap-2 p-4">
+                    <div class="relative ">
+                      <p class="text-sm amf text-white">Bet</p> <input name="name"
+                        class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-3 w-full md:py-3  hover:ring-2 text-white"
+                        id="name" type="text" required placeholder="nominal" />
+                    </div>
+                    <div class="relative">
+                      <p class="text-sm amf text-white">Durasi</p> <input name="name"
+                        class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-3 w-full  md:py-3  hover:ring-2 text-white"
+                        id="name" type="text" required placeholder="1 minute drop" />
+                    </div>
+                    <div class="relative col-span-2">
+                      <div class="flex justify-center">
+                        <div
+                          class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-white items-center duration-500 bg-gradient-to-br from-green-500 to-green-800 border-b-4 border-green-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
+                          <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                            </svg>
+                          </div>
+                          <p class="leading-none uppercase">Higher</p>
+
                         </div>
-                        <p class="leading-none uppercase">Higher</p>
+                        <div
+                          class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-white items-center duration-500 bg-gradient-to-br from-red-500 to-red-800 border-b-4  border-red-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
+                          <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181" />
+                            </svg>
+                          </div>
+                          <p class="leading-none uppercase">LOWER</p>
+
+                        </div>
 
                       </div>
-                      <div
-                        class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-white items-center duration-500 bg-gradient-to-br from-red-500 to-red-800 border-b-4  border-red-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
-                        <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181" />
-                          </svg>
-                        </div>
-                        <p class="leading-none uppercase">LOWER</p>
-
-                      </div>
-
                     </div>
                   </div>
                 </div>
@@ -381,161 +418,271 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div
-      class="relative  w-full md:w-[400px] mx-auto bg-gradient-to-br from-violet-500 via-violet-700 to-violet-900 hover:bg-violet-700 hover:via-violet-700 hover:to-violet-500 border-2 border-violet-900 rounded-2xl mb-12 shadow-lg hover:shadow-violet-900 duration-500 border-b-4 border-violet-700">
+      <div
+        class="relative  w-full md:w-[400px] mx-auto bg-gradient-to-br from-violet-500 via-violet-700 to-violet-900 hover:bg-violet-700 hover:via-violet-700 hover:to-violet-500 border-2 border-violet-900 rounded-2xl mb-12 shadow-lg hover:shadow-violet-900 duration-500 border-b-4 border-violet-700">
 
-      <div class=" bg-white rounded-t-xl w-full">
-        <div class="w-max mx-auto flex items-center">
-          <img src="https://deothemes.com/envato/xhibiter/html/img/wallets/metamask.svg" class="w-14" alt="">
-          <p class="text-lg amf">
-            DEPOSIT WITH METAMASK
-          </p>
-        </div>
-      </div>
-      <p class="text-sm text-white p-4">
-        Before making a deposit please check that Metamask is connected to smartBCH network
-      </p>
-      <div class="grid grid-cols-3 mx-auto p-4">
-        <p class="text-sm amf text-white">Deposit Amount</p>
-        <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
-          <input name="name"
-            class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-5/6 md:py-3 hover:ring-2 text-white"
-            id="name" type="text" required placeholder="100" />
-          <p class="text-sm md:text-lg text-white text-center ml-2">
-            Credits
-          </p>
-        </div>
-        <p class="text-sm amf text-white mt-4 w-max">Payment Amount </p>
-        <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
-          <input name="name"
-            class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-5/6 md:py-3 hover:ring-2 text-white"
-            id="name" type="text" required placeholder="0.01000000" />
-          <p class="text-sm md:text-lg text-white text-center ml-2">
-            BBC
-          </p>
-        </div>
-
-        <div class="relative col-span-3 mt-4">
-          <div class="flex justify-center">
-            <div
-              class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-sm text-white items-center duration-500 bg-gradient-to-br from-green-500 to-green-800 border-b-4 border-green-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
-              <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
-                </svg> </div>
-              <p class="leading-none uppercase">Connect Wallet</p>
-            </div>
-            <div
-              class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-white text-sm items-center duration-500 bg-gradient-to-br from-red-500 to-red-800 border-b-4  border-red-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
-              <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181" />
-                </svg> </div>
-              <p class="leading-none uppercase">Proceed</p>
-            </div>
+        <div class=" bg-white rounded-t-xl w-full">
+          <div class="w-max mx-auto flex items-center">
+            <img src="https://deothemes.com/envato/xhibiter/html/img/wallets/metamask.svg" class="w-14" alt="">
+            <p class="text-lg amf">
+              DEPOSIT WITH METAMASK
+            </p>
           </div>
         </div>
-      </div>
-    </div>
+        <p class="text-sm text-white p-4">
+          Before making a deposit please check that Metamask is connected to smartBCH network
+        </p>
+        <div class="grid grid-cols-3 mx-auto p-4">
+          <p class="text-sm amf text-white">Deposit Amount</p>
+          <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
+            <input name="name"
+              class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-5/6 md:py-3 hover:ring-2 text-white"
+              id="name" type="text" required placeholder="100" />
+            <p class="text-sm md:text-lg text-white text-center ml-2">
+              Credits
+            </p>
+          </div>
+          <p class="text-sm amf text-white mt-4 w-max">Payment Amount </p>
+          <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
+            <input name="name"
+              class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-5/6 md:py-3 hover:ring-2 text-white"
+              id="name" type="text" required placeholder="0.01000000" />
+            <p class="text-sm md:text-lg text-white text-center ml-2">
+              BBC
+            </p>
+          </div>
 
-    <div
-      class="relative w-full md:w-[400px] mx-auto bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300 hover:bg-slate-700 hover:via-slate-300 hover:to-slate-100 border-2 border-slate-400 rounded-2xl mb-12 shadow-lg hover:shadow-violet-900 duration-500 border-b-4 border-violet-700">
-
-      <div class=" bg-violet-700  rounded-t-xl w-full">
-        <div class="w-max mx-auto flex items-center">
-          <img src="https://deothemes.com/envato/xhibiter/html/img/wallets/metamask.svg" class="w-14" alt="">
-          <p class="text-lg text-white amf uppercase">
-            withdraw BEP20 Token
-          </p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-3 mx-auto p-4">
-        <p class="text-sm amf text-violet-500  w-max">Withdraw Amount</p>
-        <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
-          <input name="name"
-            class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-5/6 md:py-3 hover:ring-2 text-white"
-            id="name" type="text" required placeholder="100" />
-          <p class="text-sm md:text-lg text-white text-center ml-2">
-            Credits
-          </p>
-        </div>
-        <p class="text-sm amf text-violet-500  mt-4 w-max">Payment Amount </p>
-        <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
-          <input name="name"
-            class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-5/6 md:py-3 hover:ring-2 text-white"
-            id="name" type="text" required placeholder="0.01000000" />
-          <p class="text-sm md:text-lg text-white text-center ml-2">
-            BBC
-          </p>
-        </div>
-        <p class="text-sm amf text-violet-500 mt-4 w-max">Address</p>
-        <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
-          <input name="name"
-            class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-full  md:py-3 hover:ring-2 text-white"
-            id="name" type="text" required placeholder="" />
-
-        </div>
-        <div class="relative col-span-3 mt-4">
-          <div class="flex justify-center">
-            <div
-              class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-sm text-white items-center duration-500 bg-gradient-to-br from-green-500 to-green-800 border-b-4 border-green-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
-              <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                  class="w-6 h-6">
-                  <path
-                    d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
-                </svg>
+          <div class="relative col-span-3 mt-4">
+            <div class="flex justify-center">
+              <div
+                class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-sm text-white items-center duration-500 bg-gradient-to-br from-green-500 to-green-800 border-b-4 border-green-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
+                <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                  </svg> </div>
+                <p class="leading-none uppercase">Connect Wallet</p>
               </div>
-              <p class="leading-none uppercase">Proceed</p>
+              <div
+                class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-white text-sm items-center duration-500 bg-gradient-to-br from-red-500 to-red-800 border-b-4  border-red-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
+                <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181" />
+                  </svg> </div>
+                <p class="leading-none uppercase">Proceed</p>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <script>
-    // line chart data
-    var buyerData = {
-      labels: ["January", "February", "March", "April", "May", "June"],
-      datasets: [{
-        fillColor: "#5720AD",
-        strokeColor: "#ACC26D",
-        pointColor: "#fff",
-        pointStrokeColor: "#9DB86D",
-        data: [203, 156, 99, 251, 305, 247]
-      }]
-    }
-    // get line chart canvas
-    var buyers = document.getElementById('buyers').getContext('2d');
-    // draw line chart
-    new Chart(buyers).Line(buyerData);
-    // pie chart data
-    var pieData = [{
-      value: 20,
-      color: "#878BB6"
-    },
-    {
-      value: 40,
-      color: "#4ACAB4"
-    },
-    {
-      value: 10,
-      color: "#FF8153"
-    },
-    {
-      value: 30,
-      color: "#FFEA88"
-    }
-    ];
 
-  </script>
-  <script src="./js/app.bundle.js"></script>
-</body>
+      <div
+        class="relative w-full md:w-[400px] mx-auto bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300 hover:bg-slate-700 hover:via-slate-300 hover:to-slate-100 border-2 border-slate-400 rounded-2xl mb-12 shadow-lg hover:shadow-violet-900 duration-500 border-b-4 border-violet-700">
+
+        <div class=" bg-violet-700  rounded-t-xl w-full">
+          <div class="w-max mx-auto flex items-center">
+            <img src="https://deothemes.com/envato/xhibiter/html/img/wallets/metamask.svg" class="w-14" alt="">
+            <p class="text-lg text-white amf uppercase">
+              withdraw BEP20 Token
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 mx-auto p-4">
+          <p class="text-sm amf text-violet-500  w-max">Withdraw Amount</p>
+          <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
+            <input name="name"
+              class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-5/6 md:py-3 hover:ring-2 text-white"
+              id="name" type="text" required placeholder="100" />
+            <p class="text-sm md:text-lg text-white text-center ml-2">
+              Credits
+            </p>
+          </div>
+          <p class="text-sm amf text-violet-500  mt-4 w-max">Payment Amount </p>
+          <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
+            <input name="name"
+              class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-5/6 md:py-3 hover:ring-2 text-white"
+              id="name" type="text" required placeholder="0.01000000" />
+            <p class="text-sm md:text-lg text-white text-center ml-2">
+              BBC
+            </p>
+          </div>
+          <p class="text-sm amf text-violet-500 mt-4 w-max">Address</p>
+          <div class="relative col-span-3 flex items-center bg-violet-900 p-1 rounded-xl ">
+            <input name="name"
+              class="contact-form-input bg-gray-100 shadow-inner hover:ring-accent/10 focus:ring-accent placeholder:text-jacarta-300 rounded-lg py-2 w-full  md:py-3 hover:ring-2 text-white"
+              id="name" type="text" required placeholder="" />
+
+          </div>
+          <div class="relative col-span-3 mt-4">
+            <div class="flex justify-center">
+              <div
+                class="flex mr-2  w-max py-2 px-3  md:py-3 justify-between md:px-5 rounded-xl text-sm text-white items-center duration-500 bg-gradient-to-br from-green-500 to-green-800 border-b-4 border-green-900  hover:shadow-gray-900/50 hover:shadow-md amf group duration-300 transition-all ">
+                <div class="mr-2 "> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6">
+                    <path
+                      d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                  </svg>
+                </div>
+                <p class="leading-none uppercase">Proceed</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="dark:bg-jacarta-900 page-footer bg-white">
+      <div class="container">
+        <div class="grid grid-cols-6 gap-x-7 gap-y-14 pt-24 pb-12 md:grid-cols-12">
+          <div class="col-span-6 md:col-span-4">
+            <!-- Logo -->
+            <p class="text-2xl font-bold text-white hover:text-yellow-500   duration-300 animate-gradient">bitbet.io</p>
+
+            <p class="dark:text-jacarta-300 mb-12">
+              We are an online crypto casino, focused on providing the most transparent and entertaining gambling
+              experience possible.
+            </p>
+            <!-- Socials -->
+            <div class="flex space-x-5">
+              <a href="#" class="group">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                  class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="group">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                  class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="group">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord"
+                  class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                  <path
+                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="group">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                  class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="group">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok"
+                  class="group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-span-3 md:col-span-2 md:col-start-7">
+            <h3 class="font-display text-jacarta-700 mb-6 text-sm dark:text-white">GAMES</h3>
+            <ul class="dark:text-jacarta-300 flex flex-col space-y-1">
+              <li><a href="/lotre.html" class="hover:text-accent dark:hover:text-white">Lotre</a></li>
+              <li><a href="/prediksi.html" class="hover:text-accent dark:hover:text-white">Prediction</a></li>
+              <li><a href="/slot.html" class="hover:text-accent dark:hover:text-white">Slot</a></li>
+              <li><a href="/404.html" class="hover:text-accent dark:hover:text-white">Horse Race</a></li>
+              <li><a href="/404.html" class="hover:text-accent dark:hover:text-white">Blackjack</a></li>
+              <li><a href="/404.html" class="hover:text-accent dark:hover:text-white">Roulete</a></li>
+            </ul>
+          </div>
+
+          <div class="col-span-3 md:col-span-2">
+            <h3 class="font-display text-jacarta-700 mb-6 text-sm dark:text-white">PAGES</h3>
+            <ul class="dark:text-jacarta-300 flex flex-col space-y-1">
+              <li><a href="/kontak.html" class="hover:text-accent dark:hover:text-white">Contact & FAQ</a></li>
+              <li><a href="/fairplay.html" class="hover:text-accent dark:hover:text-white">Fairplay</a></li>
+              <li><a href="/about-us.html" class="hover:text-accent dark:hover:text-white">About</a></li>
+              <li><a href="/leaderboard.html" class="hover:text-accent dark:hover:text-white">Ranking</a></li>
+            </ul>
+          </div>
+
+          <div class="col-span-full sm:col-span-3 md:col-span-2">
+            <h3 class="font-display text-jacarta-700 mb-6 text-sm dark:text-white">My Account</h3>
+            <ul class="dark:text-jacarta-300 flex flex-col space-y-1">
+
+              <li><a href="/profile.html" class="hover:text-accent dark:hover:text-white">Profile</a></li>
+              <li><a href="/login.html" class="hover:text-accent dark:hover:text-white">Sign Up</a></li>
+              <li><a href="/login.html" class="hover:text-accent dark:hover:text-white">Login</a></li>
+              <li><a href="/profile.html" class="hover:text-accent dark:hover:text-white">withdraws</a></li>
+              <li><a href="/profile.html" class="hover:text-accent dark:hover:text-white">Deposits</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-between space-y-2 py-8 sm:flex-row sm:space-y-0">
+          <span class="dark:text-jacarta-400 text-sm">&copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            bitbet.io — Made by
+            <a href="#" class="hover:text-accent dark:hover:text-white">Ammeyroad</a>
+          </span>
+          <ul class="dark:text-jacarta-400 flex flex-wrap space-x-4 text-sm">
+            <li><a href="#" class="hover:text-accent dark:hover:text-white">Terms and conditions</a></li>
+            <li><a href="#" class="hover:text-accent dark:hover:text-white">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // line chart data
+      var buyerData = {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [{
+          fillColor: "#5720AD",
+          strokeColor: "#ACC26D",
+          pointColor: "#fff",
+          pointStrokeColor: "#9DB86D",
+          data: [203, 156, 99, 251, 305, 247]
+        }]
+      }
+      // get line chart canvas
+      var buyers = document.getElementById('buyers').getContext('2d');
+      // draw line chart
+      new Chart(buyers).Line(buyerData);
+      // pie chart data
+      var pieData = [{
+        value: 20,
+        color: "#878BB6"
+      },
+      {
+        value: 40,
+        color: "#4ACAB4"
+      },
+      {
+        value: 10,
+        color: "#FF8153"
+      },
+      {
+        value: 30,
+        color: "#FFEA88"
+      }
+      ];
+
+    </script>
+    <script src="./js/app.bundle.js"></script>
+  </body>
 
 </html>
