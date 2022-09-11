@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Clipan Finance" />
+  <meta name="keywords" content="login edocument" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="ammeyroad" />
+
+  <title>Clipan Finance - Login Dokumen</title>
+
+  <!-- Scrollbar Custom CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+  <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    /* general styling */
+    body {
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+    }
+  </style>
+</head>
+
+<body class="bg-yellow-900">
+  <!-- nav -->
+  <nav
+    class="bg-white px-2 sm:px-4 py-1.5 dark:bg-gray-800 fixed w-full z-30 top-0 left-0 border-b border-yellow-500 hover:bg-blur">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <button data-collapse-toggle="navbar-sticky" type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-yellow-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 mr-2"
+        aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <a href="https://flowbite.com/" class="flex items-center">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      </a>
+      <div class="flex md:order-2 items-center">
+
+        <button data-popover-target="popover-bottom" data-popover-trigger="bottom" type="button"
+          class="flex rounded-full border bg-gray-800 border-gray-800 text-yellow-400 hover:text-black hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 items-center transition duration-500 hover:shadow-lg hover:shadow-yellow-500/50 hover:border hover:border-yellow-900"
+          id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+          <span class=" inline-flex items-center mx-4 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
+            </svg>
+
+            <span class="font-medium text-md md:text-xl">02020</span>
+          </span>
+          <img class="h-10 w-10 md:h-14 md:w-14 rounded-full border-2 border-yellow-500/50"
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            alt="">
+        </button>
+        <button type="button"
+          class="text-white bg-white/20 hover:bg-yellow-500 hover:text-black focus:ring-1 focus:outline-none focus:ring-yellow-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center ml-2 transition duration-500 hover:shadow-lg hover:shadow-yellow-500/50">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 md:w-8 md:h-8">
+            <path fill-rule="evenodd"
+              d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+              clip-rule="evenodd" />
+          </svg>
+
+          <span class="sr-only">Icon description</span>
+        </button>
+        <div data-popover id="popover-bottom" role="tooltip"
+          class="inline-block absolute invisible z-10 w-64 text-sm font-light text-gray-500 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 transition-opacity duration-300 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+          <div
+            class="py-2 px-3 bg-gray-100 rounded-t-lg border-b border-gray-200 dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Popover click</h3>
+          </div>
+          <div class="py-2 px-3">
+            <p>And here's some amazing content. It's very engaging. Right?</p>
+          </div>
+          <div data-popper-arrow></div>
+        </div>
+      </div>
+
+      <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 p-1 w-full">
+
+          <li>
+            <button data-popover-target="popover-bottom" data-popover-placement="bottom" type="button"
+              class="text-yellow-500 hover:bg-yellow-500 hover:text-gray-900 hover:shadow-yellow-500/50 hover:shadow-lg transition focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-auto inline-flex items-center md:flex-col dark:focus:ring-[#F7BE38]/50 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8 mb-1 mx-auto">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+              </svg>
+
+              <span class="text-lg md:text-sm md:ml-0 ml-3">GAMES</span>
+              <div data-popover id="popover-bottom" role="tooltip"
+                class="inline-block absolute invisible z-10 w-96 text-sm font-light text-gray-500 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 transition-opacity duration-300 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800 w-full">
+                <div
+                  class="py-2 px-3 bg-gray-100 rounded-t-lg border-b border-gray-200 dark:border-gray-600 dark:bg-gray-700">
+                  <h3 class="font-semibold text-yellow-600 ">List games</h3>
+                </div>
+                <div class="py-2 px-3">
+                  <p>And here's some amazing content. It's very engaging. Right?</p>
+                </div>
+                <div data-popper-arrow></div>
+              </div>
+          </li>
+          <li>
+            <button type="button"
+              class="text-purple-600 hover:bg-purple-600 hover:text-white hover:shadow-purple-600/50 hover:shadow-lg  focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-auto inline-flex  md:flex-col item-center dark:focus:ring-white/30 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8 mb-1 mx-auto">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+              </svg>
+
+              <span class="text-lg md:text-sm md:ml-0 ml-3">BOARD</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button"
+              class="text-red-600 hover:bg-red-600 hover:text-white hover:shadow-red-600/50 hover:shadow-lg  focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-auto flex-inline md:flex-col dark:focus:ring-white/30 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8 mb-1 mx-auto">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+              </svg>
+
+              <span class="text-lg md:text-sm md:ml-0 ml-3">PROMO</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- j tab produk -->
+  <section>
+    <div class="py-4 m-5 rounded-2xl ">
+      <div class="mt-24 swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex rounded-lg p-4 flex-col  bg-gray-900 bg-opacity-20 border-yellow-700 mb-2">
+              <div class="flex items-center text-white">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-yellow-500 text-white flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg  font-medium">Shooting Stars</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="text-white text-left mb-2 ">Blue bottle crucifix vinyl post-ironic four dollar toast
+                  vegan</p>
+                <div class="flex p-4 text-sm text-yellow-700 rounded-lg bg-yellow-200" role="alert">
+                  <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-1 " fill="currentColor"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+
+                  <div>
+                    Change a few things up and try .
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex rounded-lg p-4 flex-col  bg-gray-900 bg-opacity-80 border-yellow-700 mb-2">
+              <div class="flex items-center text-white">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-yellow-500 text-white flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg  font-medium">Shooting Stars</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="text-white text-left mb-2 ">Blue bottle crucifix vinyl post-ironic four dollar toast
+                  vegan</p>
+                <div class="flex p-4 text-sm text-yellow-700 rounded-lg bg-yellow-200" role="alert">
+                  <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-1 " fill="currentColor"
+                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+
+                  <div>
+                    Change a few things up and try .
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+        </div>
+        <br><br>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!--b original game -->
+  <section class="text-gray-600 body-font">
+
+    <div class="container px-5 mx-auto">
+      <div class="max-w-screen-md mb-4 mt-24   lg:mb-16 mx-auto">
+        <h2 class="mb-4 text-3xl tracking-tight font-bold text-white text-center">Original Adventure</h2>
+      </div>
+    </div>
+  </section>
+  <!--c more game -->
+  <section class="text-gray-600 body-font my-12 ">
+    <div class="container px-5 py-8 mb-5 mx-auto bg-yellow-800 md:rounded-2xl">
+      <div class=" mb-4 lg:mb-5 mx-auto">
+        <h2 class="mb-4 text-2xl tracking-tight font-bold text-white ">More Adventure</h2>
+
+        <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+          <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent"
+            role="tablist">
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block p-4 rounded-t-lg border-b-2 text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500"
+                id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
+                aria-selected="true">SLOT</button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700"
+                id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
+                aria-selected="false">CARD</button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700"
+                id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
+                aria-selected="false">BLACKJACK</button>
+            </li>
+          </ul>
+        </div>
+        <div id="myTabContent">
+          <div class="rounded-lg " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-2">
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">CARD GAME</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">CARD GAME</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">CARD GAME</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hidden" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-2">
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">BLACKJACK</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">BLACKJACK</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">SLOT ROUTE</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hidden" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-2">
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">SLOT ROUTE</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">SLOT ROUTE</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="relative group overflow-hidden rounded-xl bg-gray-800 bg-opacity-50 ">
+                <figure class="relative p-2 ">
+                  <a href="item.html"
+                    class="group block after:absolute after:inset-0 after:block after:bg-indigo-900/20">
+                    <img src="https://deothemes.com/envato/xhibiter/html//img/products/item_20_square.jpg" alt="item 20"
+                      class="w-full object-cover transition-transform duration-[1600ms] will-change-transform group-hover:scale-105 group-hover:sepia rounded-lg "
+                      height="959" width="959">
+                  </a>
+                </figure>
+                <div class="pointer-events-none absolute bottom-0 w-full p-3 ">
+
+                  <a href="#"
+                    class="flex justify-between items-center p-2 rounded-lg text-white bg-yellow-500 bg-opacity-20 group-hover:bg-yellow-500 group-hover:bg-opacity-100 group-hover:text-gray-900 duration-200 font-medium ">
+                    <span class="text-sm">BLACKJACK</span>
+                    <span
+                      class="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">&RightArrow;</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- d fair  -->
+  <section class="">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-5 lg:py-16 lg:grid-cols-12">
+      <div class="overflow-x-auto relative col-span-12">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50 rounded-lg">
+            <tr class="text-black bg-yellow-500">
+
+              <th scope="col" class="py-5 px-6">
+                Name
+              </th>
+              <th scope="col" class="py-5 px-6">
+                Position
+              </th>
+              <th scope="col" class="py-5 px-6">
+                Status
+              </th>
+              <th scope="col" class="py-5 px-6">
+                Action
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class=" dark:border-gray-700 hover:bg-gray-50">
+
+              <th scope="row" class="flex items-center py-4 px-6 text-gray-900 whitespace-nowrap dark:text-white">
+                <img class="w-10 h-10 rounded-full" src="https://dummyimage.com/460x500.jpg" alt="Jese image">
+                <div class="pl-3">
+                  <div class="text-base font-semibold">Neil Sims</div>
+                  <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
+                </div>
+              </th>
+              <td class="py-4 px-6">
+                React Developer
+              </td>
+              <td class="py-4 px-6">
+                <div class="flex items-center">
+                  <div class="h-2.5 w-2.5 rounded-full bg-green-400 mr-2"></div> Online
+                </div>
+              </td>
+              <td class="py-4 px-6">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+              </td>
+            </tr>
+            <tr class=" dark:border-gray-700 hover:bg-gray-50">
+
+              <th scope="row"
+                class="flex items-center py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <img class="w-10 h-10 rounded-full" src="https://dummyimage.com/460x500.jpg" alt="Jese image">
+                <div class="pl-3">
+                  <div class="text-base font-semibold">Bonnie Green</div>
+                  <div class="font-normal text-gray-500">bonnie@flowbite.com</div>
+                </div>
+              </th>
+              <td class="py-4 px-6">
+                Designer
+              </td>
+              <td class="py-4 px-6">
+                <div class="flex items-center">
+                  <div class="h-2.5 w-2.5 rounded-full bg-green-400 mr-2"></div> Online
+                </div>
+              </td>
+              <td class="py-4 px-6">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+              </td>
+            </tr>
+            <tr class=" dark:border-gray-700 hover:bg-gray-50">
+
+              <th scope="row"
+                class="flex items-center py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <img class="w-10 h-10 rounded-full" src="https://dummyimage.com/460x500.jpg" alt="Jese image">
+                <div class="pl-3">
+                  <div class="text-base font-semibold">Jese Leos</div>
+                  <div class="font-normal text-gray-500">jese@flowbite.com</div>
+                </div>
+              </th>
+              <td class="py-4 px-6">
+                Vue JS Developer
+              </td>
+              <td class="py-4 px-6">
+                <div class="flex items-center">
+                  <div class="h-2.5 w-2.5 rounded-full bg-green-400 mr-2"></div> Online
+                </div>
+              </td>
+              <td class="py-4 px-6">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+              </td>
+            </tr>
+            <tr class=" dark:border-gray-700 hover:bg-gray-50">
+
+              <th scope="row"
+                class="flex items-center py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <img class="w-10 h-10 rounded-full" src="https://dummyimage.com/460x500.jpg" alt="Jese image">
+                <div class="pl-3">
+                  <div class="text-base font-semibold">Thomas Lean</div>
+                  <div class="font-normal text-gray-500">thomes@flowbite.com</div>
+                </div>
+              </th>
+              <td class="py-4 px-6">
+                UI/UX Engineer
+              </td>
+              <td class="py-4 px-6">
+                <div clas s="flex items-center">
+                  <div class="h-2.5 w-2.5 rounded-full bg-green-400 mr-2"></div> Online
+                </div>
+              </td>
+              <td class="py-4 px-6">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+              </td>
+            </tr>
+            <tr class=" hover:bg-gray-50">
+
+              <th scope="row"
+                class="flex items-center py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <img class="w-10 h-10 rounded-full" src="https://dummyimage.com/460x500.jpg" alt="Jese image">
+                <div class="pl-3">
+                  <div class="text-base font-semibold">Leslie Livingston</div>
+                  <div class="font-normal text-gray-500">leslie@flowbite.com</div>
+                </div>
+              </th>
+              <td class="py-4 px-6">
+                SEO Specialist
+              </td>
+              <td class="py-4 px-6">
+                <div class="flex items-center">
+                  <div class="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div> Offline
+                </div>
+              </td>
+              <td class="py-4 px-6">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <!--footer Initialize Swiper -->
+  <footer>
+    <div class="pt-8 bg-gradient-to-b from-gray-900 to-sky-900 md:pt-20">
+      <div class="container m-auto px-6 space-y-8 text-gray-400 md:px-12 lg:px-20">
+        <div>
+          <div class="mb-6 gap-6 items-center justify-between py-6 sm:flex md:mb-16 md:py-0 md:space-y-6">
+            <img width="100" height="42" src="images/logo.svg" alt="logo tailus" class="w-32" />
+            <div class="flex flex-wrap flex-col-reverse gap-6 mt-6 sm:flex-row sm:mt-0 sm:items-center">
+              <select name="langage" id="langae" class="px-4 py-2 w-full rounded-xl bg-gray-900 sm:w-max">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="sw">Swahili</option>
+              </select>
+              <div class="flex gap-6">
+                <a href="#" target="blank" aria-label="github" class="hover:text-cyan-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </a>
+                <a href="#" target="blank" aria-label="twitter" class="hover:text-cyan-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg>
+                </a>
+                <a href="#" target="blank" aria-label="medium" class="hover:text-cyan-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-medium" viewBox="0 0 16 16">
+                    <path
+                      d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="pb-16 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-5">
+              <div>
+                <h6 class="text-lg font-medium text-white">Categories</h6>
+                <ul class="list-inside mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Customers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Enterprise</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Partners</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Jobs</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h6 class="text-lg font-medium text-white">Products</h6>
+                <ul class="list-inside mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Customers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Enterprise</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Partners</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Jobs</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h6 class="text-lg font-medium text-white">Ressources</h6>
+                <ul class="list-inside mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Customers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Enterprise</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Partners</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Jobs</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-span-2 sm:col-span-3 md:col-span-2">
+                <h6 class="text-lg font-medium text-white">Contact</h6>
+                <ul class="list-inside mt-4 space-y-4">
+                  <li>
+                    <a href="tel:+243996660436" class="hover:text-cyan-400 transition">+243 996 660 436</a>
+                  </li>
+                  <li>
+                    <a href="mailto:meschacirung@gmail.com"
+                      class="hover:text-cyan-400 transition">contact@tailus.com</a>
+                  </li>
+                  <li>
+                    <form action="">
+                      <label for="newsletter" class="text-lg text-white">Subscribe to our newsletter</label>
+                      <div class="relative mt-4">
+                        <input type="email" name="newsletter" id="newsletter" placeholder="Your email"
+                          class="w-full px-4 py-3 ring-1 ring-cyan-700 rounded-xl bg-gray-900 bg-opacity-20 invalid:ring-red-400 invalid:outline-none">
+                        <button type="submit" title="Submit"
+                          class="absolute right-0 w-max py-3 px-6 text-center rounded-r-xl transition bg-cyan-400 hover:bg-cyan-300 active:bg-cyan-600 focus:bg-cyan-300">
+                          <span class="text-gray-900 font-semibold">
+                            Send
+                          </span>
+                        </button>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="py-8 border-t border-cyan-800 text-gray-200 flex justify-between">
+              <span>&copy; tailus 2003 - <span id="year"></span></span>
+              <span>All right reserved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      grabCursor: true,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-120%", 0, -500],
+        },
+        next: {
+          shadow: true,
+          translate: ["120%", 0, -500],
+        },
+      },
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    function dropdownFunction(element) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      let list = element.parentElement.parentElement.getElementsByClassName("dropdown-content")[0];
+      list.classList.add("target");
+      for (i = 0; i < dropdowns.length; i++) {
+        if (!dropdowns[i].classList.contains("target")) {
+          dropdowns[i].classList.add("hidden");
+        }
+      }
+      list.classList.toggle("hidden");
+    }
+  </script>
+</body>
+
+
+</html>
