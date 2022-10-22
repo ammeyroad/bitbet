@@ -1,0 +1,1 @@
+import{o as t,c as o,u as r,i as a,b as n,e as c}from"./vendor.9029893e.js";const l=n("i",{class:"fa fa-chevron-left"},null,-1),_=c(" Back "),u=[l,_],m={setup(i){const s=a();return(d,e)=>(t(),o("small",{onClick:e[0]||(e[0]=f=>r(s).go(-1)),class:"text-green-500"},u))}};export{m as _};
