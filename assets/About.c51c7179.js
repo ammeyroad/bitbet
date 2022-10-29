@@ -1,1 +1,0 @@
-import{H as r}from"./h-slider.00dfbc77.js";import{_ as o}from"./h-game.fc18bb39.js";import{o as s,c as a,f as e}from"./vendor.562fc998.js";import"./index.e9979dee.js";const _={setup(c){return(t,m)=>(s(),a("main",null,[e(r),e(o)]))}};export{_ as default};
