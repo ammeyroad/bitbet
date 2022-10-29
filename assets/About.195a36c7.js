@@ -1,1 +1,0 @@
-import{H as a,a as r}from"./h-game.6d2e8c61.js";import{o,c as s,b as e}from"./vendor.64c9be75.js";import"./index.3b112709.js";const l={setup(t){return(c,m)=>(o(),s("main",null,[e(a),e(r)]))}};export{l as default};
