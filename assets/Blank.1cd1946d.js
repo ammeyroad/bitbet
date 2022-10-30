@@ -1,1 +1,0 @@
-import{j as a,h as s,H as o,k as r}from"./index.1a0f8da0.js";import{o as t,c as n,f as e,a as c}from"./vendor.e9bd5562.js";const d=c("aside",null,null,-1),p={setup(l){return(_,i)=>(t(),n("main",null,[d,e(a),e(s),e(o),e(r)]))}};export{p as default};
