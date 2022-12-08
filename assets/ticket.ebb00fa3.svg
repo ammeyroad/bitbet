@@ -1,0 +1,9 @@
+<svg width="495" height="215" viewBox="0 0 495 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M495 0H0V15.0044C14.957 15.271 27 27.479 27 42.5C27 57.521 14.957 69.729 0 69.9956V76.0044C14.957 76.271 27 88.479 27 103.5C27 118.521 14.957 130.729 0 130.996V145.004C14.957 145.271 27 157.479 27 172.5C27 187.521 14.957 199.729 0 199.996V215H495V0Z" fill="url(#paint0_diamond_119_87)"/>
+<defs>
+<radialGradient id="paint0_diamond_119_87" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16 119) rotate(-0.578725) scale(445.523 1025.74)">
+<stop stop-color="#D926A9"/>
+<stop offset="0.729687" stop-color="#FF00BB" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
